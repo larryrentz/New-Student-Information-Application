@@ -1,10 +1,12 @@
 {
   "type": "module",
   "scripts": {
-    "start": "node server/server.js"
+    "start": "nodemon server/server.js"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.10.9",
+    "nodemon": "^2.0.6"
   },
   "name": "new-student-information-application",
   "description": "An Information Hub and Forum",
