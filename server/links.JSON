@@ -1,0 +1,113 @@
+{
+	"links": [
+	{
+		"health": [
+			{
+			"link": "https://ufhealth.org/resources/locations"
+			},
+			{
+			"link": "https://ufhealth.org/resources"
+			},
+			{
+			"link": "https://ufhealth.org/resources/providers"
+			},
+			{
+			"link": "https://ufhealth.org/resources/research-studies"
+			},
+			{		
+			"link": "https://shcc.ufl.edu/"
+			}
+			  ]
+	},
+		"academics": [
+			{
+			"link": "http://www.ufadvising.ufl.edu/college-remote-advising-contacts/"
+			},
+			{
+			"link": "https://teachingcenter.ufl.edu/tutoring/"
+			},
+			{
+			"link": "https://career.ufl.edu/"
+			},
+			{
+			"link": "http://www.honors.ufl.edu/"
+			},
+			{
+			"link": "https://admissions.ufl.edu/apply/transfer/"
+			},
+			{
+			"link": "https://cur.aa.ufl.edu/scholarships/"
+			},
+			{
+			"link": "http://graduateschool.ufl.edu/prospective-students/funding/fellowships/"
+			}
+			     ]
+	},
+		"finance": [
+			{
+			"link": "https://www.sfa.ufl.edu/"
+			},
+			{
+			"link": "https://questions.ufl.edu/all-questions-by-category/financial-aid/"
+			},
+			{
+			"link": "https://www.sfa.ufl.edu/search/"
+			},
+			{
+			"link": "https://www.sfa.ufl.edu/resources/policies-and-disclosures/"
+			},
+			{
+			"link": "https://www.sfa.ufl.edu/types-of-aid/loans/"
+			},
+			{
+			"link": "https://www.sfa.ufl.edu/contact-sfa/"
+			}
+			    ]
+	},
+		"housing": [
+			{
+			"link": "https://www.housing.ufl.edu/housing/"
+			},
+			{
+			"link": "http://www.offcampus.ufl.edu/"
+			},
+			{
+			"link": "https://www.housing.ufl.edu/about/staff/"
+			},
+			{
+			"link": "https://www.housing.ufl.edu/campus-life/"
+			},
+			{
+			"link": "https://hms.housing.ufl.edu/iservicedesk/f?p=100:1:10608586446464"
+			}
+			    ]
+	},
+		"extracurriculars": [
+			{
+			"link": "https://orgs.studentinvolvement.ufl.edu/Organizations"
+			},
+			{
+			"link": "https://orgs.studentinvolvement.ufl.edu/Events"
+			},
+			{
+			"link": "https://studentinvolvement.ufl.edu/"
+			},
+			{
+			"link": "https://recsports.ufl.edu/"
+			},
+			{
+			"link": "https://recsports.ufl.edu/about/hours/"
+			},
+			{
+			"link": "https://recsports.ufl.edu/about/memberships/eligibility/"
+			},
+			{
+			"link": "https://recsports.ufl.edu/classes/"
+			},
+			{
+			"link": "https://www.ufl.edu/student-life/"
+			}
+			            ]
+	}
+			]
+}
