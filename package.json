@@ -1,9 +1,26 @@
 {
-    "type": "module",
-    "scripts": {
-        "start": "node server/server.js"
-    },
-    "dependencies": {
-        "express": "^4.17.1"
-    }
+  "type": "module",
+  "scripts": {
+    "start": "nodemon server/server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.10.10",
+    "nodemon": "^2.0.6"
+  },
+  "name": "new-student-information-application",
+  "description": "A informational webpage for students new to UF",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lrentz99/New-Student-Information-Application.git"
+  },
+  "author": "UF QuaranTeens",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lrentz99/New-Student-Information-Application/issues"
+  },
+  "homepage": "https://github.com/lrentz99/New-Student-Information-Application#readme"
 }
