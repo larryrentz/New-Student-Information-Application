@@ -1,0 +1,4 @@
+# https://www.robotstxt.org/robotstxt.html
+# Disallows good-hearted bots from entering the site.
+User-agent: *
+Disallow: /
