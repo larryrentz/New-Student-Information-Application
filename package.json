@@ -1,6 +1,19 @@
 {
   "type": "module",
-  
+  "name": "new-student-information-application",
+  "description": "A informational webpage for students new to UF",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lrentz99/New-Student-Information-Application.git"
+  },
+  "author": "UF QuaranTeens",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lrentz99/New-Student-Information-Application/issues"
+  },
+  "homepage": "https://github.com/lrentz99/New-Student-Information-Application#readme",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.5",
     "@testing-library/react": "^11.1.0",
@@ -9,10 +22,13 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.0",
+    "mongoose": "^5.10.10",
+    "nodemon": "^2.0.6",
     "web-vitals": "^0.2.4"
   },
+  "devDependencies": {},
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts start && nodemon server/server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
