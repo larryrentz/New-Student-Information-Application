@@ -1,7 +1,7 @@
 node_modules/
 .idea/
 /.history
-server/config/config.js
+src/server/config/config.js
 
 # REACT files
 #--------------
