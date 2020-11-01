@@ -17,4 +17,4 @@ const connectToDatabase = () => {
   return mongoose.connection;
 };
 
-export { connectToDatabase };
+export { connectToDatabase }; 
