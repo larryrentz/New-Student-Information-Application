@@ -1,7 +1,7 @@
 import React, {useState, useEffect, useRef } from 'react'
 import config from '../server/config/config.js'
 
-export default function Map({options, onMount, className, onMountProps }) {
+export default function GoogleMap({options, onMount, className, onMountProps }) {
   const ref = useRef();
   const [map, setMap] = useState();
   

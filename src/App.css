@@ -50,9 +50,10 @@
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 25px 25px;
+
+  padding: 50px 50px;
   text-decoration: none;
-  font-size: 44px;
+  font-size: 40px;
 }
 
 /* Change the color of links on hover */
@@ -64,7 +65,10 @@
 /* UF logo */
 .topnav a.active {
   background-color: #0033ff;
+
   color: white;
+
+
 }
 
 
@@ -79,6 +83,7 @@
 }
 
 .header{
+
   border-color: black;
   border-style: solid;
   padding: 1px;
@@ -86,6 +91,14 @@
   background: #0033ff;
   color: white;
   font-size: 15px;
+
+{/*  padding: 10px;
+  text-align: center;
+  background: #0033ff;
+  color: white;
+  font-size: 19.6px;
+  */}
+
 }
 
 /* end of page nav*/
@@ -99,7 +112,7 @@
 
 .column {
   float: left;
-  width: 50%;
+  width: 100%;
   padding: 10px;
   height: 300px; /* Should be removed. Only for demonstration */
 }
@@ -110,3 +123,4 @@
   display: table;
   clear: both;
 }
+
