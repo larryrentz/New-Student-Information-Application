@@ -379,9 +379,6 @@ function Finance() {
 
           </div>
         );
+
 }
-
-
-
-//export default App;
 
