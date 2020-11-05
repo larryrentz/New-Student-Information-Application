@@ -99,7 +99,7 @@
   float: left;
   width: 100%;
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+   /* Should be removed. Only for demonstration * DO NOT DEFINE A HEIGHT, NOT DYNAMIC height: 300px;*/
 }
 
 /* Clear floats after the columns */
