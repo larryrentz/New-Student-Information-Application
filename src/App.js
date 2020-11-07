@@ -1,6 +1,6 @@
 import './App.css';
 import React from "react";
-import GoogleMap, {addMarkers, locationList, mapOptions} from './Components/GoogleMap.js'
+import GoogleMap, {addMarkers, locationList, mapOptions} from './components/GoogleMap'
 
 import {
   BrowserRouter as Router,
@@ -19,7 +19,7 @@ import {
 // making sure things like the back button and bookmarks
 // work properly.
 
-export default function App() {
+export default function BasicExample() {
   return (
     <Router>
       <div>
@@ -168,12 +168,12 @@ function Finance() {
 }
 
 
-function Health() {
+  function Health() {
     return (
       <div className="HealthPage">
         <div>
       <div class="header">
-        <h1>In an emergency call 911.   For mental distress call the suicide hotline at 1-800-273-8255</h1>
+        <h1>In an emergency call 911.   For mental distress call the suicde hotline at 1-800-273-8255</h1>
       </div>
 
 
@@ -225,9 +225,9 @@ function Health() {
       </div>
 
     );
-}
+  }
 
-function Housing() {
+    function Housing() {
       return (
         <div classname="HousingPage">
           <div class="column">
@@ -257,9 +257,11 @@ function Housing() {
           </div>
         </div>
       );
-}
+    }
 
-function Map() {
+      function Map() {
+
+
           var mapProps = {
           options: mapOptions,
           onMount: addMarkers,
@@ -272,5 +274,4 @@ function Map() {
             <GoogleMap{...mapProps} />
           </div>
         );
-}
-
+      }
