@@ -1,6 +1,6 @@
 import './App.css';
 import React from "react";
-import GoogleMap, {addMarkers, locationList, mapOptions} from './components/GoogleMap'
+import GoogleMap, {addMarkers, locationList, mapOptions} from './Components/GoogleMap.js'
 
 import {
   BrowserRouter as Router,
