@@ -1,0 +1,122 @@
+  
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/*NAVIGATION BAR*/
+
+.topnav {
+  background-color: #dd6f08;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 25px 25px;
+  text-decoration: none;
+  font-size: 44px;
+  font-weight: bold;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  text-decoration: underline  #dd6f08;
+}
+
+/* UF logo */
+.topnav a.active {
+  background-color: #1069b6;
+  color: white;
+}
+
+.topnav a.active:hover {
+  background-color: #0e5fa5;
+  color: white;
+  text-decoration: underline  #0e5fa5;
+}
+
+
+/* DISCLAIMER TEXT*/
+.page_disclaim {
+  background-color: #1069b6;
+  float: right;
+  text-align: center;
+  color: white;
+  padding: 10px 10px;
+  font-size: 19.6px;
+}
+
+.header{
+  border-color: black;
+  border-style: solid;
+  padding: 1px;
+  text-align: center;
+  background: #1069b6;
+  color: white;
+  font-size: 15px;
+
+}
+
+/* end of page nav*/
+
+.students {
+  column-count: 1;
+  column-gap: 40px;
+  column-rule-style: solid;
+}
+
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
