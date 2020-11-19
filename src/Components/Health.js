@@ -8,7 +8,7 @@ export default class Health extends Component {
             <div class="header">
               {/* do not change ^ to header */}
               <h1>In an emergency call 911. For mental distress call the suicide hotline at 1-800-273-8255</h1>
-            </div>   
+            </div>
 
             <div class="ui divider"></div>
       <div class="ui two column padded grid">
@@ -30,7 +30,7 @@ export default class Health extends Component {
         <p><a href="  https://www.cdc.gov/sexualhealth/Default.html">CDC-Sexual Health</a></p>
         <p><a href="   https://www.pornhub.com/view_video.php?viewkey=ph5f4f9c6bd67e4">Sexual Health-Funny</a></p>
         {/*For the love of god delete this link or just don't show it during presentation^^^^ */}
-      
+
       <p><a href=" https://www.thehotline.org/">National Domestic Violence Hotline</a></p>
       <p><a href="  https://www.myflfamilies.com/service-programs/abuse-hotline/frequently-asked-questions.shtml">myflfamilies</a></p>
 
@@ -67,7 +67,7 @@ export default class Health extends Component {
 
         </div>
         </div>
-      
+
         <div class="ui two column padded grid">
         <div class="column">
 
@@ -83,7 +83,7 @@ export default class Health extends Component {
           <p><a href="      https://www.youtube.com/">YouTube </a></p>
           <p><a href="  https://www.publix.com/pd/publix-chicken-tender-sub/BMO-DSB-100011">Get yourself a chicken tender sub </a></p>
           {/*Code a submit link button here  */}
-        
+
 
         </div>
         </div>
@@ -94,12 +94,12 @@ export default class Health extends Component {
           <p><a href="https://ufhealth.org/">ufhealth.org</a></p>
           <p><a href=" https://ufhealth.org/shands-university-florida">ufhealth-shands</a></p>
           <p><a href="https://ufhealth.org/uf-health-shands-hospital-patient-guide/telephone-directory">Shands Patient Directory</a></p>
-        
+
         </div>
         </div>
             </div>
               {/* INSERT SUBMIT BUTTON THAT SENDS AN EMAIL OR DATA OR WHATEVER TO SUBMIT A NEW LINK */}
-          
+
             </div>
 
           );
