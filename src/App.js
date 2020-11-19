@@ -31,24 +31,23 @@ import Housing from './Components/Housing.js';
 export default function App() {
   return (
     <Router>
+      {/* ADD Login functionality
       <div>
-        {/* ADD Login functionality
+        <Link to="/log_in">Login</Link>
+      </div>*/}
       <div>
-            <Link to="/log_in">Login</Link>
-        </div>*/}
-      <div class="topnav"> 
-         <a class="active" href="#logo">UF</a>
-        
+        <div class="topnav">
+          <a class="active" href="#logo">UF</a>
+
 {/*the titles of the different navigation links*/ }
           <div>
             <Link to="/home">Home</Link>
-            
-          </div >
+          </div>
 
           <div>
             <Link to="/academics">Academics</Link>
           </div>
-          
+
           <div>
             <Link to="/finance">Finance</Link>
           </div>
@@ -56,7 +55,7 @@ export default function App() {
           <div>
             <Link to="/health">Health</Link>
           </div>
-          
+
           <div>
             <Link to="/housing">Housing</Link>
           </div>
@@ -65,43 +64,35 @@ export default function App() {
             <Link to="/map">Map</Link>
           </div>
 
-          
 
-          </div>
-          </div>
-          
+
+        </div>
+      </div>
+
 
         {/*
           A <Switch> looks through all its children <Route>
           elements and renders the first one whose path
           matches the current URL. Use a <Switch> any time
           you have multiple routes, but you want only one
-          of them to render at a time 
-          
-          
+          of them to render at a time
+
+
           NOTE TO SELF GET RID OF EXACT makes it only one homepage
         */}
         <Switch>
-
-          
+          <Route exact path="/" component={Home}/>
           <Route path="/home" component={Home}/>
-            
           <Route path="/log_in">
             <log_in />
           </Route>
-
           <Route path="/academics" component={Academics}/>
-
           <Route path="/finance" component={Finance}/>
-
           <Route path="/health" component={Health}/>
-
           <Route path="/housing" component={Housing}/>
-
           <Route path="/map">
             <Map />
           </Route>
-
         </Switch>
     </Router>
   );
@@ -127,4 +118,3 @@ return (
   </div>
 );
 }
-
