@@ -1,8 +1,7 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-export default class Housing extends Component {
-    render() {
-        return (
+export default function Housing() {
+      return (
             <div classname="HousingPage">
               <div class="column">
                 <h1>Housing Page</h1>
@@ -30,6 +29,5 @@ export default class Housing extends Component {
                 </div>
               </div>
             </div>
-          );
-    }
+        );
 }

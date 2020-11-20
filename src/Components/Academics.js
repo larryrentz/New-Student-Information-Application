@@ -1,7 +1,6 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-export default class Academics extends Component {
-    render() {
+export default function Academics() {
         return (
             <div classname="AcademicsPage">
               <div class="column">
@@ -47,5 +46,4 @@ export default class Academics extends Component {
               </div>
             </div>
           );
-    }
 }
