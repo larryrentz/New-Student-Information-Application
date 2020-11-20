@@ -1,7 +1,6 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-export default class Health extends Component {
-    render() {
+export default function Health() {
         return (
             <div className="HealthPage">
               <div>
@@ -103,6 +102,4 @@ export default class Health extends Component {
             </div>
 
           );
-    }
-
 }

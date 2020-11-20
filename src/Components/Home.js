@@ -1,11 +1,18 @@
-import React, {Component} from 'react';
+import React from 'react';
+import FacebookPage from './FacebookAPI.js'
 
-export default class Home extends Component {
-    render() {
-        return (
-            <div>
-              <h1>Home</h1>
-            </div>
-          );
-    }
+export default function Home() {
+
+  var facebookProps = 
+  {
+    width: "",
+    height: ""
+  }
+
+  return (
+    <div>
+      <h1>Home</h1>
+      <FacebookPage{...facebookProps}/>
+    </div>
+  );
 }

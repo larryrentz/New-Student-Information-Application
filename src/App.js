@@ -1,6 +1,5 @@
 import './App.css';
 import React from "react";
-import GoogleMap, {addMarkers, locationList, mapOptions} from './Components/GoogleMap.js';
 import {
   BrowserRouter as Router,
   Switch,
@@ -12,7 +11,7 @@ import Academics from './Components/Academics.js';
 import Finance from './Components/Finance.js';
 import Health from './Components/Health.js';
 import Housing from './Components/Housing.js';
-
+import Map from './Components/Map.js';
 
 // TODO Add a 404 page
 // TODO commit package.json file
@@ -90,31 +89,10 @@ export default function App() {
           <Route path="/finance" component={Finance}/>
           <Route path="/health" component={Health}/>
           <Route path="/housing" component={Housing}/>
-          <Route path="/map">
+          <Route path="/map" component={Map}>
             <Map />
           </Route>
         </Switch>
     </Router>
   );
-}
-
-// You can think of these components as "pages"
-// in your app.
-{/* HTML CODE GOES HERE*/}
-
-
-function Map() {
-
-  var mapProps = {
-  options: mapOptions,
-  onMount: addMarkers,
-  onMountProps: locationList,
-}
-
-return (
-  <div>
-    <h1>Map</h1>
-    <GoogleMap{...mapProps} />
-  </div>
-);
 }
