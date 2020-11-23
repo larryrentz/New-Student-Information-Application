@@ -15,6 +15,16 @@ const db = connectToDatabase().on(
 
 const app = express();
 
+//Serve static assets if in production
+if(process.env.NODE_ENV === 'production') {
+  //set static folder
+  app.use(express.static('build')); //client/build???
+
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'build', 'index.html'));
+  });
+}
+
 app.all('/*', (req, res) => {
  res.statusCode === 404 ? res.send('Sorry, information not available') : res.sendFile(path.resolve('./client/index.html'))  
 });
