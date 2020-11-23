@@ -16,7 +16,7 @@ const db = connectToDatabase().on(
 const app = express();
 
 app.all('/*', (req, res) => {
- res.statusCode === 404 ? res.send('Sorry, information not available') : res.sendFile(path.resolve('./client/index.html'))  
+ res.statusCode === 404 ? res.send('Sorry, information not available') : res.sendFile(path.resolve('./client/index.html'))
 });
 
-app.listen(config.port, () => console.log(`App now listening on http://localhost:${config.port}`)); 
+app.listen(config.port, () => console.log(`App now listening on http://localhost:${config.port}`));

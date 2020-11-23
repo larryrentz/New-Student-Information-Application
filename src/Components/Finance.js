@@ -1,9 +1,8 @@
-import React, {Component} from 'react';
+import React from 'react';
 /*import MortgageCalculator from "mortgage-calculator-react";
 import CompoundInterest from 'react-compound-interest'; */
 
-export default class Finance extends Component {
-    render() {
+export default function Finance() {
         return (
             <div>
               <div class="ui two column padded grid">
@@ -104,6 +103,4 @@ export default class Finance extends Component {
         
             </div>
           );
-    }
-
 }

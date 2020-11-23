@@ -3,6 +3,8 @@ node_modules/
 /.history
 src/server/config/config.js
 
+debug.log
+
 # REACT files
 #--------------
 # dependencies
