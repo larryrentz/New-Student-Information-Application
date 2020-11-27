@@ -3,7 +3,7 @@ import FacebookPage from './FacebookAPI.js'
 
 export default function Home() {
 
-  var facebookProps = 
+  var facebookProps =
   {
     width: "",
     height: ""
@@ -11,8 +11,12 @@ export default function Home() {
 
   return (
     <div>
-      <h1>Home</h1>
-      <FacebookPage{...facebookProps}/>
+      <div class="column">
+        <h1>Home</h1>
+      </div>
+      <div>
+        <FacebookPage{...facebookProps}/>
+      </div>
     </div>
   );
 }

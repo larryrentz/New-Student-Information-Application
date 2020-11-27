@@ -1,5 +1,6 @@
 import './App.css';
 import React from "react";
+import ScopedCssBaseline from '@material-ui/core/ScopedCssBaseline';
 import {
   BrowserRouter as Router,
   Switch,
@@ -29,6 +30,7 @@ import Map from './Components/Map.js';
 
 export default function App() {
   return (
+    <ScopedCssBaseline>
     <Router>
       {/* ADD Login functionality
       <div>
@@ -94,5 +96,6 @@ export default function App() {
           </Route>
         </Switch>
     </Router>
+    </ScopedCssBaseline>
   );
 }
