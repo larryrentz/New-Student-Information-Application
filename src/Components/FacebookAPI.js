@@ -1,8 +1,6 @@
 import React from 'react';
 import { FacebookProvider, Page } from 'react-facebook';
 import config from '../server/config/config.js'
- 
-
 
 export default function FacebookPage({width, height}){
     return (
