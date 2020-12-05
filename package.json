@@ -5,13 +5,17 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "express": "^4.17.1",
+    "interestjs": "^1.0.0",
     "mongoose": "^5.10.10",
+    "mortgage-calculator-react": "^0.1.3",
     "nodemon": "^2.0.6",
+    "passport": "^0.4.1",
     "react": "^17.0.1",
+    "react-compound-interest": "^1.3.1",
     "react-dom": "^17.0.1",
+    "react-google-login": "^5.1.25",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.0",
-    "react-router-dom": "^5.2.0",
     "web-vitals": "^0.2.4"
   },
   "author": "UF QuaranTeens",
@@ -32,7 +36,8 @@
     "start": "react-scripts start && nodemon server/server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run build"
   },
   "eslintConfig": {
     "extends": [

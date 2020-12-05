@@ -87,13 +87,6 @@
   color: white;
   font-size: 15px;
 
-{/*  padding: 10px;
-  text-align: center;
-  background: #0033ff;
-  color: white;
-  font-size: 19.6px;
-  */}
-
 }
 
 /* end of page nav*/
@@ -109,7 +102,6 @@
   float: left;
   width: 50%;
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
 }
 
 /* Clear floats after the columns */

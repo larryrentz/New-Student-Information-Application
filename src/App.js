@@ -1,6 +1,7 @@
-//import logo from './logo.svg';
 import './App.css';
-import React from "react";
+//import React from "react";
+import React, { useState } from "react";
+import GoogleMap, {addMarkers, locationList, mapOptions} from './Components/GoogleMap.js'
 import {
   BrowserRouter as Router,
   Switch,
@@ -10,6 +11,15 @@ import {
 
 import MortgageCalculator from "mortgage-calculator-react";
 import CompoundInterest from 'react-compound-interest';
+
+import Search from "./Components/Search";
+import ViewFootballClub from "./Components/ViewFootballClub";
+import FootballClubLists from "./Components/FootballClubLists";
+import AddPost from "./Components/AddPosts";
+import RemoveFootballClub from "./Components/RemoveFootballClub";
+import EditFootballClub from "./Components/editFootballClub";
+import { getData } from "./data/data.js";
+import GoogleLogin from 'react-google-login'
 
 
 // TODO Add a 404 page
@@ -26,7 +36,8 @@ import CompoundInterest from 'react-compound-interest';
 // making sure things like the back button and bookmarks
 // work properly.
 
-export default function BasicExample() {
+export default function App() {
+
   return (
     <Router>
       <div>
@@ -121,23 +132,156 @@ export default function BasicExample() {
 {/* HTML CODE GOES HERE*/}
 
 function Home() {
+  
+  const [data, setData] = useState(getData());
+  const [filteredClubs, setFilteredClubs] = useState([]);
+  const [delFootballClub, setDelFootballClub] = useState({
+    visible: false,
+    id: null,
+  });
+  const [editFootballClub, setEditFootballClub] = useState({
+    visible: false,
+    id: null,
+  });
+  const [viewFootballClub, setViewFootballClub] = useState({
+    visible: false,
+    id: 0,
+  });
+  const [addFootballClub, setAddFootballClub] = useState(false);
+
+  const responseGoogle = (response) => {
+    console.log(response);
+  }
+
   return (
-    <div>
-      <h1>Home</h1>
+    <div className="App">
+      <div className="bg">
+   
+      <div>
+          <GoogleLogin
+          clientId="615814529637-q15bkmhmaomjr482k7dgu4k9g5v65dl9.apps.googleusercontent.com"
+          onSuccess={responseGoogle}
+          isSignedIn={true} />
+            </div>
+
+      <div style={{ paddingTop: "5%", paddingBottom: "10%" }} class="ui container">
+     <h1 style={{ color: "darkOrange", marginTop: "25px" }}>Welcome To Gator Aider </h1>
+
+        <Search data={data} setFilteredClubs={setFilteredClubs} />
+
+
+        <main style={{ marginTop: "20px" }} className="main">
+
+              {/*Button to create a new post */}
+              <button onClick={() => setAddFootballClub(true)}
+                      style={{ marginBottom: "5px", marginLeft: "-15px" }}
+                      class="ui button orange"> New Post </button>
+
+              {/*The add post window at the bottom of the page */}
+              <div style={{ marginLeft: "-12px" }} class="column">
+                {addFootballClub && (
+                  <AddPost
+                    setData={setData}
+                    data={data}
+                    setAddFootballClub={setAddFootballClub} />)}
+              </div>
+
+
+
+          <div class="ui two column grid">
+            <div class="row">
+              {/*Width of the table that shows all the posts */}
+              <div style={{ width: "50%" }} class="table-responsive"className="tableWrapper">
+
+                {/*The table that holds the posts */}
+                <table class="ui stackable single line fixed striped selectable table padded ">
+                    <thead>
+                      <tr>
+                        <th>Title</th>
+                        <th>Category</th>
+                        
+                      </tr>
+                    </thead>
+                  
+                      <FootballClubLists
+                        data={data}
+                        filteredClubs={filteredClubs}
+                        setViewFootballClub={setViewFootballClub} />
+                      
+                      {/*this shows the filtered posts in the table  */}
+                      <tfoot>
+                        <tr>
+                          <th>
+                            {filteredClubs !== null && filteredClubs.length !== 0 ? "Search results: " + filteredClubs.length: data.length}{" "}Post(s)
+                          </th>
+                        </tr>
+                      </tfoot>
+                </table>
+              </div>
+
+                <div style={{width: "200%", marginLeft: "570px", marginTop: "-530px", }}>
+                  <ViewFootballClub
+                    data={data}
+                    viewFootballClub={viewFootballClub}
+                    setViewFootballClub={setViewFootballClub}/>
+                </div>
+              </div>
+          </div>
+        </main>
+      </div>
     </div>
+  </div>
   );
 }
+
 
 function Academics() {
   return (
-    <div>
-      <h1>About</h1>
+    <div classname="AcademicsPage">
+      <div class="column">
+        <h1>Undergraduate Resources</h1>
+        <div class="column">
+          <h2>Advising</h2>
+          <p><a href="http://www.ufadvising.ufl.edu/college-remote-advising-contacts/"
+          target="_blank" rel="noopener noreferrer">College Remote Advising Center</a></p>
+        </div>
+        <div class="column">
+          <h2>Tutoring</h2>
+          <p><a href="https://teachingcenter.ufl.edu/tutoring/" target="_blank"
+          rel="noopener noreferrer">Teaching Center</a></p>
+        </div>
+        <div class="column">
+          <h2>Job Resources</h2>
+          <p><a href="https://career.ufl.edu/"
+          target="_blank" rel="noopener noreferrer">Career Center</a></p>
+        </div>
+        <div class="column">
+          <h2>Honors Programs</h2>
+          <p><a href="http://www.honors.ufl.edu/"
+          target="_blank" rel="noopener noreferrer">Honors Program</a></p>
+        </div>
+        <div class="column">
+          <h2>Admissions</h2>
+          <p><a href="https://admissions.ufl.edu/apply/transfer/"
+          target="_blank" rel="noopener noreferrer">Transfer Student Center</a></p>
+        </div>
+        <div class="column">
+          <h2>Scholarships</h2>
+          <p><a href="https://cur.aa.ufl.edu/scholarships/"
+          target="_blank" rel="noopener noreferrer">Center for Undergraduate Research</a></p>
+        </div>
+      </div>
+      <div class="column">
+        <h1>Graduate Resources</h1>
+        <div class="column">
+          <h2>Graduate Resources</h2>
+          <p><a href="http://graduateschool.ufl.edu/prospective-students/funding/fellowships/"
+          target="_blank" rel="noopener noreferrer">Fellowships Center</a></p>
+        </div>
+      </div>
     </div>
   );
 }
-
-
-
 
 function Finance() {
   return (
@@ -241,16 +385,13 @@ function Finance() {
   );
 }
 
-
-
-
   function Health() {
                 return (
                   <div className="HealthPage">
                     <div>
                   <div class="header">
                     {/* do not change ^ to header */}
-                    <h1>In an emergency call 911   For mental distress call the suicde hotline at 1-800-273-8255</h1>
+                    <h1>In an emergency call 911. For mental distress call the suicide hotline at 1-800-273-8255</h1>
                   </div>   
 
                   <div class="ui divider"></div>
@@ -274,9 +415,6 @@ function Finance() {
               <p><a href="   https://www.pornhub.com/view_video.php?viewkey=ph5f4f9c6bd67e4">Sexual Health-Funny</a></p>
               {/*For the love of god delete this link or just don't show it during presentation^^^^ */}
             
-            <h2>
-              F**K ABUSE
-            </h2>
             <p><a href=" https://www.thehotline.org/">National Domestic Violence Hotline</a></p>
             <p><a href="  https://www.myflfamilies.com/service-programs/abuse-hotline/frequently-asked-questions.shtml">myflfamilies</a></p>
 
@@ -351,21 +489,50 @@ function Finance() {
                 );
   }
 
-    function Housing() {
-      return (
-        <div>
-          <h1>Dashboard</h1>
-        </div>
-      );
-    }
-
-      function Map() {
-        return (
-          <div>
-            <h1>Dashboard</h1>
+function Housing() {
+    return (
+      <div classname="HousingPage">
+        <div class="column">
+          <h1>Housing Page</h1>
+          <div class="column">
+            <h2>Undergraduate Housing</h2>
+            <p><a href="https://www.housing.ufl.edu/housing/"
+            target="_blank" rel="noopener noreferrer">Housing and Residence Education</a></p>
+            <p><a href="https://www.housing.ufl.edu/about/staff/"
+            target="_blank" rel="noopener noreferrer">Housing Staff Contact Info</a></p>
+            <p><a href="https://www.housing.ufl.edu/campus-life/"
+            target="_blank" rel="noopener noreferrer">Campus Life Information</a></p>
           </div>
-        );
+          <div class="column">
+            <h2>Off Campus Housing</h2>
+            <p><a href="http://www.offcampus.ufl.edu/"
+            target="_blank" rel="noopener noreferrer">Off Campus Housing Center</a></p>
+          </div>
+        </div>
+        <div class="column">
+          <h1>Resources</h1>
+          <div class="column">
+            <h2>Help Information</h2>
+            <p><a href="https://hms.housing.ufl.edu/iservicedesk/f?p=100:1:10608586446464"
+            target="_blank" rel="noopener noreferrer">iService Desk</a></p>
+          </div>
+        </div>
+      </div>
+    );
 }
 
+function Map() {
 
-//export default App;
+  var mapProps = {
+  options: mapOptions,
+  onMount: addMarkers,
+  onMountProps: locationList,
+}
+
+return (
+  <div>
+    <h1>Map</h1>
+    <GoogleMap{...mapProps} />
+  </div>
+);
+}
