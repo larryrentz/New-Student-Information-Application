@@ -7,10 +7,10 @@ export default function Map() {
     onMount: addMarkers,
     onMountProps: locationList,
   }
-  
+
   return (
     <div>
-      <h1>Map</h1>
+      <h1 class="header_title">Map</h1>
       <GoogleMap{...mapProps} />
     </div>
   );

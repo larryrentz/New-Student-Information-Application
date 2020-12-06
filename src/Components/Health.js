@@ -7,14 +7,14 @@ export default function Health() {
             <div class="header">
               {/* do not change ^ to header */}
               <h1>In an emergency call 911. For mental distress call the suicide hotline at 1-800-273-8255</h1>
-            </div>   
+            </div>
 
             <div class="ui divider"></div>
       <div class="ui two column padded grid">
         <div class="column">
-          <h1>STUDENTS</h1>
+          <h1 class="header_title">STUDENTS</h1>
 
-        <h2>Student Health Care Center</h2> {/*Header */}
+        <h2 class="header_title">Student Health Care Center</h2> {/*Header */}
         {/*HyperLinks */}
         <p><a href=" https://shcc.ufl.edu/">Student Healh Center</a></p>
 
@@ -22,14 +22,14 @@ export default function Health() {
 
         <p><a href=" https://ufhealth.org/uf-student-health-care-center-main-campus">SHCC-UFHealth</a></p>
 
-        <h2>Sexual Health</h2>
+        <h2 class="header_title">Sexual Health</h2>
         <p><a href=" https://shcc.ufl.edu/tag/sexual-health/">SHCC-Sexual Health</a></p>
         <p><a href=" https://gatorwell.ufsa.ufl.edu/health-topic/sexual-health/">Gatorwell- Sexual Health</a></p>
         <p><a href="  https://www.plannedparenthood.org/health-center/florida/gainesville/32601/gainesville-health-center-2155-90320/std-testing-treatment">Planned Parenthood</a></p>
         <p><a href="  https://www.cdc.gov/sexualhealth/Default.html">CDC-Sexual Health</a></p>
         <p><a href="   https://www.pornhub.com/view_video.php?viewkey=ph5f4f9c6bd67e4">Sexual Health-Funny</a></p>
         {/*For the love of god delete this link or just don't show it during presentation^^^^ */}
-      
+
       <p><a href=" https://www.thehotline.org/">National Domestic Violence Hotline</a></p>
       <p><a href="  https://www.myflfamilies.com/service-programs/abuse-hotline/frequently-asked-questions.shtml">myflfamilies</a></p>
 
@@ -39,7 +39,7 @@ export default function Health() {
         <div class="ui two column padded grid">
         <div class="column">
 
-          <h1>COVID-19</h1>
+          <h1 class="header_title">COVID-19</h1>
 
           <h2>Covid-19 is a very real and dangerous virus please protect yourself and others</h2>
           {/* Headers and links for specific websites that deal with Covid-19 */}
@@ -66,39 +66,39 @@ export default function Health() {
 
         </div>
         </div>
-      
+
         <div class="ui two column padded grid">
         <div class="column">
 
-          <h1>MENTAL HEALTH</h1>
-            <h2>Resources</h2>
+          <h1 class="header_title">MENTAL HEALTH</h1>
+            <h2 class="header_title">Resources</h2>
           <p><a href=" https://www.mentalhealth.gov/basics/what-is-mental-health">Mental Health.gov/Basics</a></p>
           <p><a href="   https://www.mentalhealth.gov/">Mental Health.gov</a></p>
           <p><a href="  https://www.nimh.nih.gov/index.shtml">NIMH.NIH.gov</a></p>
 
-          <h2>Stress Relief</h2>
+          <h2 class="header_title">Stress Relief</h2>
           <p><a href=" https://www.youtube.com/watch?v=_f_BnneFanM">Music to relax to </a></p>
           <p><a href="  https://open.spotify.com/">Spotify </a></p>
           <p><a href="      https://www.youtube.com/">YouTube </a></p>
           <p><a href="  https://www.publix.com/pd/publix-chicken-tender-sub/BMO-DSB-100011">Get yourself a chicken tender sub </a></p>
           {/*Code a submit link button here  */}
-        
+
 
         </div>
         </div>
 
         <div class="ui two column padded grid">
         <div class="column">
-          <h1>Shands</h1>
+          <h1 class="header_title">Shands</h1>
           <p><a href="https://ufhealth.org/">ufhealth.org</a></p>
           <p><a href=" https://ufhealth.org/shands-university-florida">ufhealth-shands</a></p>
           <p><a href="https://ufhealth.org/uf-health-shands-hospital-patient-guide/telephone-directory">Shands Patient Directory</a></p>
-        
+
         </div>
         </div>
             </div>
               {/* INSERT SUBMIT BUTTON THAT SENDS AN EMAIL OR DATA OR WHATEVER TO SUBMIT A NEW LINK */}
-          
+
             </div>
 
           );

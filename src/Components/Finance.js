@@ -7,7 +7,7 @@ export default function Finance() {
             <div>
               <div class="ui two column padded grid">
                       <div class="column">
-                      <h1>Financial Aid</h1>
+                      <h1 class="header_title">Financial Aid</h1>
                      {/*Header */}
 
                       {/*HyperLinks */}
@@ -21,7 +21,7 @@ export default function Finance() {
 
               <div class="ui two column padded grid">
                       <div class="column">
-                      <h1>Financial Literacy</h1>
+                      <h1 class="header_title">Financial Literacy</h1>
                       {/*Header */}
 
                       {/*HyperLinks */}
@@ -47,7 +47,7 @@ export default function Finance() {
 
               <div class="ui two column padded grid">
                       <div class="column">
-                      <h1>Investing</h1>
+                      <h1 class="header_title">Investing</h1>
                       {/*Header */}
 
                       {/*HyperLinks */}
@@ -65,7 +65,7 @@ export default function Finance() {
 
               <div class="ui two column padded grid">
                       <div class="column">
-                      <h1>Loan Calculators</h1>
+                      <h1 class="header_title">Loan Calculators</h1>
                       {/*Header */}
 
                       {/*HyperLinks */}
@@ -76,13 +76,13 @@ export default function Finance() {
 
                       {/*Put This underneath a dropdown bar, Takes up too much space on the page */}
 
-                       <h2>Mortgage Calculator</h2>
+                       <h2 class="header_title">Mortgage Calculator</h2>
                        <div>
                             <MortgageCalculator/>
-                          
+
                       </div>
 
-        <h2>Compound Interest Calculator </h2>
+        <h2 class="header_title">Compound Interest Calculator </h2>
                       <div>
                       <CompoundInterest title="Compound Interest Calculator" />
                        </div>

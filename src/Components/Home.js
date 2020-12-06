@@ -6,24 +6,28 @@ export default function Home() {
 
   var facebookProps =
   {
-    width: "",
+    width: "400",
     height: "400"
   }
 
   var twitterProps =
   {
-    width: 400,
-    height: 400
+    width: "400",
+    height: "400"
   }
 
   return (
     <div>
       <div class="column">
-        <h1>Home</h1>
+        <h1 class="header_title">Home</h1>
       </div>
       <div class="column">
-        <FacebookPage{...facebookProps}/>
-        <TwitterPage{...twitterProps}/>
+        <div class="space">
+          <FacebookPage{...facebookProps}/>
+        </div>
+        <div class="space">
+          <TwitterPage{...twitterProps}/>
+        </div>
       </div>
     </div>
   );
