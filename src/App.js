@@ -20,7 +20,7 @@ import RemoveFootballClub from "./Components/RemoveFootballClub";
 import EditFootballClub from "./Components/editFootballClub";
 import { getData } from "./data/data.js";
 import GoogleLogin from 'react-google-login'
-
+import GoogleBtn from './GoogleBtn';
 
 // TODO Add a 404 page
 // TODO commit package.json file
@@ -156,29 +156,26 @@ function Home() {
   return (
     <div className="App">
       <div className="bg">
-   
-      <div>
-          <GoogleLogin
-          clientId="615814529637-q15bkmhmaomjr482k7dgu4k9g5v65dl9.apps.googleusercontent.com"
-          onSuccess={responseGoogle}
-          isSignedIn={true} />
-            </div>
+   <div style={{marginLeft: "1490px"}}>
+      <GoogleBtn/>
+</div>
 
-      <div style={{ paddingTop: "5%", paddingBottom: "10%" }} class="ui container">
-     <h1 style={{ color: "darkOrange", marginTop: "25px" }}>Welcome To Gator Aider </h1>
+      <div style={{ paddingTop: "5%", paddingBottom: "60%" }} class="ui container">
+     <h1 style={{ color: "darkOrange", marginTop: "-126px" }}>Welcome To Gator Aider </h1>
 
+     <div style={{ paddingTop: "5%", paddingBottom: "60%" }}>
         <Search data={data} setFilteredClubs={setFilteredClubs} />
-
+      
 
         <main style={{ marginTop: "20px" }} className="main">
 
               {/*Button to create a new post */}
               <button onClick={() => setAddFootballClub(true)}
-                      style={{ marginBottom: "5px", marginLeft: "-15px" }}
+                      style={{ marginBottom: "5px", marginRight: "1400px" }}
                       class="ui button orange"> New Post </button>
 
               {/*The add post window at the bottom of the page */}
-              <div style={{ marginLeft: "-12px" }} class="column">
+              <div style={{ marginLeft: "10px" }} class="column">
                 {addFootballClub && (
                   <AddPost
                     setData={setData}
@@ -219,7 +216,7 @@ function Home() {
                 </table>
               </div>
 
-                <div style={{width: "200%", marginLeft: "570px", marginTop: "-530px", }}>
+                <div style={{width: "100%", marginLeft: "570px", marginTop: "-590px", }}>
                   <ViewFootballClub
                     data={data}
                     viewFootballClub={viewFootballClub}
@@ -227,7 +224,9 @@ function Home() {
                 </div>
               </div>
           </div>
+          
         </main>
+        </div>
       </div>
     </div>
   </div>

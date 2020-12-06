@@ -26,7 +26,7 @@ const ViewFootballClub = (props) => {
             <div class="content">
 
               {/*you could find a getter or setter that would make this by the user's email name , else make it by anonymous*/}
-              <h class="header">{getFootballClubData().school} by </h>
+              <h class="header">{getFootballClubData().school} UserNames Here </h>
               <div class="ui divider"></div>
               <div class="description">
                 
