@@ -3,6 +3,9 @@ node_modules/
 /.history
 src/server/config/config.js
 
+#Secret Variables
+.env
+
 # REACT files
 #--------------
 # dependencies

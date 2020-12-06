@@ -1,5 +1,11 @@
 import React, {useState, useEffect, useRef } from 'react'
-import config from '../server/config/config.js'
+//import config from '../server/config/config.js'
+
+require('dotenv').config();
+
+const {
+  GOOGLEMAPS_KEY
+} = process.env;
 
 export default function GoogleMap({options, onMount, className, onMountProps }) {
   const ref = useRef();
@@ -11,7 +17,7 @@ export default function GoogleMap({options, onMount, className, onMountProps }) 
     }
     if (!window.google) {
       const script = document.createElement(`script`)
-      script.src = config.googleMapsKey;
+      script.src = GOOGLEMAPS_KEY;
       document.head.append(script)
       script.addEventListener(`load`, onLoad)
       return () => script.removeEventListener(`load`, onLoad)
