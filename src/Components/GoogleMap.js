@@ -107,5 +107,5 @@ export class MapContainer extends Component {
 }
 
 export default GoogleApiWrapper({
-  apiKey: ('hide')
+  apiKey: (config.googleMapsKey)
 })(MapContainer)
