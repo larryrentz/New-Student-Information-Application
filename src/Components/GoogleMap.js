@@ -1,10 +1,10 @@
-import React, {useState, useEffect, useRef } from 'react'
+import React, {useState, useEffect, useRef } from 'react';
 //import config from '../server/config/config.js'
 
 require('dotenv').config();
 
 const {
-  GOOGLEMAPS_KEY
+   GOOGLEMAPS_KEY
 } = process.env;
 
 export default function GoogleMap({options, onMount, className, onMountProps }) {
@@ -17,7 +17,7 @@ export default function GoogleMap({options, onMount, className, onMountProps }) 
     }
     if (!window.google) {
       const script = document.createElement(`script`)
-      script.src = GOOGLEMAPS_KEY;
+      script.src = `https://maps.googleapis.com/maps/api/js?key=${GOOGLEMAPS_KEY}`; //env var not loading
       document.head.append(script)
       script.addEventListener(`load`, onLoad)
       return () => script.removeEventListener(`load`, onLoad)
