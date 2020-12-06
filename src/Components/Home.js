@@ -1,12 +1,19 @@
 import React from 'react';
 import FacebookPage from './FacebookAPI.js'
+import TwitterPage from './TwitterAPI.js'
 
 export default function Home() {
 
   var facebookProps =
   {
     width: "",
-    height: ""
+    height: "400"
+  }
+
+  var twitterProps =
+  {
+    width: 400,
+    height: 400
   }
 
   return (
@@ -14,8 +21,9 @@ export default function Home() {
       <div class="column">
         <h1>Home</h1>
       </div>
-      <div>
+      <div class="column">
         <FacebookPage{...facebookProps}/>
+        <TwitterPage{...twitterProps}/>
       </div>
     </div>
   );
