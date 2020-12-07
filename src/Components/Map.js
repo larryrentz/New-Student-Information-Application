@@ -1,5 +1,5 @@
 import React from 'react';
-import GoogleMap, {addMarkers, locationList, mapOptions} from './GoogleMapAPI.js';
+import GoogleMap, {addMarkers, locationList, mapOptions} from './GoogleMap.js';
 
 export default function Map() {
     var mapProps = {
