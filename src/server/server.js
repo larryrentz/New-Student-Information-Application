@@ -1,7 +1,13 @@
 import path from 'path';
 import express from 'express';
-import config from './config/config.js'
+//import config from './config/config.js'
 import {connectToDatabase} from './connectMongodb.js';
+
+require('dotenv').config();
+
+const {
+  PORT
+} = process.env;
 
 //connect to database
 const db = connectToDatabase().on(
@@ -19,4 +25,4 @@ app.all('/*', (req, res) => {
  res.statusCode === 404 ? res.send('Sorry, information not available') : res.sendFile(path.resolve('./client/index.html'))
 });
 
-app.listen(config.port, () => console.log(`App now listening on http://localhost:${config.port}`));
+app.listen(PORT, () => console.log(`App now listening on http://localhost:${PORT}`));
