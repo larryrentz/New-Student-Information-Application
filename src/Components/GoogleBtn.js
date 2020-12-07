@@ -1,8 +1,14 @@
 import React, { Component } from 'react'
 import { GoogleLogin, GoogleLogout } from 'react-google-login';
 
+require('dotenv').config();
 
-const CLIENT_ID = '615814529637-q15bkmhmaomjr482k7dgu4k9g5v65dl9.apps.googleusercontent.com';
+const {
+  REACT_APP_GOOGLE_LOGIN_API_KEY
+} = process.env;
+
+
+const CLIENT_ID = `${REACT_APP_GOOGLE_LOGIN_API_KEY}`;
 
 
 class GoogleBtn extends Component {
