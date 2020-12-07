@@ -1,10 +1,16 @@
-import config from '../server/config/config.js'
+//import config from '../server/config/config.js'
 import React, { Component } from 'react';
 import {Map, Marker, GoogleApiWrapper} from 'google-maps-react';
 import PlacesAutocomplete, {
   geocodeByAddress,
   getLatLng,
 } from 'react-places-autocomplete';
+
+require('dotenv').config();
+
+const {
+  REACT_APP_GOOGLE_API_KEY
+} = process.env;
 
 export class MapContainer extends Component {
   constructor(props) {
@@ -107,5 +113,5 @@ export class MapContainer extends Component {
 }
 
 export default GoogleApiWrapper({
-  apiKey: (config.googleMapsKey)
+  apiKey: (`${REACT_APP_GOOGLE_API_KEY}`)
 })(MapContainer)

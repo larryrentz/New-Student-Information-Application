@@ -5,6 +5,7 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "express": "^4.17.1",
+    "google-map-react": "^2.1.9",
     "google-maps-react": "^2.0.6",
     "interestjs": "^1.0.0",
     "mongoose": "^5.10.10",
