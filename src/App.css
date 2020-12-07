@@ -1,4 +1,4 @@
-  
+ 
 .App {
   text-align: center;
 }
@@ -44,6 +44,10 @@
 .topnav {
   background-color: #dd6f08;
   overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9;
 }
 
 /* Style the links inside the navigation bar */
@@ -55,6 +59,7 @@
   text-decoration: none;
   font-size: 44px;
   font-weight: bold;
+  transition: 0.2s;
 }
 
 /* Change the color of links on hover */
@@ -68,12 +73,13 @@
 .topnav a.active {
   background-color: #1069b6;
   color: white;
+  text-decoration: none;
 }
 
 .topnav a.active:hover {
   background-color: #0e5fa5;
   color: white;
-  text-decoration: underline  #0e5fa5;
+  text-decoration: none;
 }
 
 
@@ -95,6 +101,7 @@
   background: #1069b6;
   color: white;
   font-size: 15px;
+  border-bottom: 2px;
 
 }
 
