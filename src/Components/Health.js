@@ -1,105 +1,100 @@
 import React from 'react';
+import {Container, Row, Col} from 'reactstrap';
 
 export default function Health() {
         return (
-            <div className="HealthPage">
-              <div>
-            <div class="header">
+            <div className="HealthPage main">
+              <div class="header">
               {/* do not change ^ to header */}
-              <h1>In an emergency call 911. For mental distress call the suicide hotline at 1-800-273-8255</h1>
+              <h3 className="headertext">In an emergency call 911. For mental distress call the suicide hotline at 1-800-273-8255</h3>
             </div>   
 
-            <div class="ui divider"></div>
-      <div class="ui two column padded grid">
-        <div class="column">
-          <h1>STUDENTS</h1>
+              <Container fluid>
+                <Row>
+                  <Col className = "headbord1">
+                  <h1 className = "heading1 text-center">STUDENTS</h1>
 
-        <h2>Student Health Care Center</h2> {/*Header */}
-        {/*HyperLinks */}
-        <p><a href=" https://shcc.ufl.edu/">Student Healh Center</a></p>
+                  </Col>
 
-        <p><a href=" https://shcc.ufl.edu/services/covid19/">Student Healh Center Covid-19</a></p>
+                  <Col className = "headbord2">
+                    <h1 className = "heading1 text-center">COVID-19</h1>
 
-        <p><a href=" https://ufhealth.org/uf-student-health-care-center-main-campus">SHCC-UFHealth</a></p>
+                  </Col>
 
-        <h2>Sexual Health</h2>
-        <p><a href=" https://shcc.ufl.edu/tag/sexual-health/">SHCC-Sexual Health</a></p>
-        <p><a href=" https://gatorwell.ufsa.ufl.edu/health-topic/sexual-health/">Gatorwell- Sexual Health</a></p>
-        <p><a href="  https://www.plannedparenthood.org/health-center/florida/gainesville/32601/gainesville-health-center-2155-90320/std-testing-treatment">Planned Parenthood</a></p>
-        <p><a href="  https://www.cdc.gov/sexualhealth/Default.html">CDC-Sexual Health</a></p>
-        <p><a href="   https://www.pornhub.com/view_video.php?viewkey=ph5f4f9c6bd67e4">Sexual Health-Funny</a></p>
-        {/*For the love of god delete this link or just don't show it during presentation^^^^ */}
-      
-      <p><a href=" https://www.thehotline.org/">National Domestic Violence Hotline</a></p>
-      <p><a href="  https://www.myflfamilies.com/service-programs/abuse-hotline/frequently-asked-questions.shtml">myflfamilies</a></p>
+                </Row>
 
-        </div>
-      </div>
+                <Row>
 
-        <div class="ui two column padded grid">
-        <div class="column">
+                  <Col className = "leftcol">
+                    <h2 className = "heading2">STUDENT HEALTH CARE CENTER</h2>
+                    <p><a className = "heading3" href=" https://shcc.ufl.edu/">Student Healh Center</a></p>
+                    <p><a className = "heading3" href=" https://shcc.ufl.edu/services/covid19/">Student Healh Center Covid-19</a></p>
+                    <p><a className = "heading3" href=" https://ufhealth.org/uf-student-health-care-center-main-campus">SHCC-UFHealth</a></p>
 
-          <h1>COVID-19</h1>
+                    <h2 className = "heading2">MISCELLANEOUS</h2>
+                    <p><a className = "heading3" href=" https://shcc.ufl.edu/tag/sexual-health/">SHCC-Sexual Health</a></p>
+                    <p><a className = "heading3" href=" https://gatorwell.ufsa.ufl.edu/health-topic/sexual-health/">Gatorwell- Sexual Health</a></p>
+                    <p><a className = "heading3" href="  https://www.plannedparenthood.org/health-center/florida/gainesville/32601/gainesville-health-center-2155-90320/std-testing-treatment">Planned Parenthood</a></p>
+                    <p><a className = "heading3" href="  https://www.cdc.gov/sexualhealth/Default.html">CDC-Sexual Health</a></p>
 
-          <h2>Covid-19 is a very real and dangerous virus please protect yourself and others</h2>
-          {/* Headers and links for specific websites that deal with Covid-19 */}
-          <h3>CDC - official website</h3>
-          <p><a href=" https://www.cdc.gov/coronavirus/2019-nCoV/index.html">CDC-Covid-19</a></p>
+                  </Col>
 
-          <h3>CDC informational pamphlet</h3>
-          <p><a href=" https://www.cdc.gov/coronavirus/2019-ncov/communication/print-resources.html?Sort=Date%3A%3Adesc">CDC-print resources</a></p>
+                  <Col className = "rightcol">
 
-          <h3>General Information</h3>
-          <p><a href=" https://www.cdc.gov/coronavirus/2019-ncov/index.html">CDC.gov</a></p>
+                    <h2 className = "heading2">OFFICIAL INFORMATION</h2>
+                    <p><a className = "heading3" href=" https://www.cdc.gov/coronavirus/2019-nCoV/index.html">CDC-Covid-19</a></p>
+                    <p><a className = "heading3" href=" https://www.cdc.gov/coronavirus/2019-ncov/communication/print-resources.html?Sort=Date%3A%3Adesc">CDC-print resources</a></p>
+                    <p><a className = "heading3" href=" https://www.cdc.gov/coronavirus/2019-ncov/index.html">CDC.gov</a></p>
+                    <p><a className = "heading3" href=" https://www.hrsa.gov/opa/COVID-19-resources">HRSA COVID-19 Resources</a></p>
+                    <p><a className = "heading3" href=" https://www.drugabuse.gov/drug-topics/comorbidity/covid-19-resources">NIH - drug abuse</a></p>
+                    <p><a className = "heading3" href=" https://www.nih.gov/coronavirus">NIH - Covid-19</a></p>
+                    <p><a className = "heading3" href=" https://coronavirus.ufl.edu/">UF - coronavirus</a></p>
 
-          <h3>HRSA Covid-19 </h3>
-          <p><a href=" https://www.hrsa.gov/opa/COVID-19-resources">HRSA COVID-19 Resources</a></p>
+                    
+                  </Col>
 
-          <h3>NIH- Covid-19 and substance abuse</h3>
-          <p><a href=" https://www.drugabuse.gov/drug-topics/comorbidity/covid-19-resources">NIH - drug abuse</a></p>
+                </Row>
 
-          <h3>NIH - Covid-19</h3>
-          <p><a href=" https://www.nih.gov/coronavirus">NIH - Covid-19</a></p>
+                <Row>
+                  <Col className = "headbord">
+                    <h1 className = "heading1 text-center">MENTAL HEALTH</h1>
+                  </Col>
+                </Row>
 
-          <h3>University of Florida Covid-19 response</h3>
-          <p><a href=" https://coronavirus.ufl.edu/">UF - coronavirus</a></p>
+                <Row>
+                  <Col>
+                  <h2 className = "heading2 text-center">RESOURCES</h2>
+                  <div className = "text-center">
+                  <p><a className = "heading3 text-center" href=" https://www.mentalhealth.gov/basics/what-is-mental-health">Basics of Mantaining Mental Health</a></p>
+                  <p><a className = "heading3 text-center" href="   https://www.mentalhealth.gov/">Official Government Website for Mental Health</a></p>
+                  <p><a className = "heading3 text-center" href="  https://www.nimh.nih.gov/index.shtml">Official website of the National Institute of Mental Health</a></p>
+                  </div>
 
-        </div>
-        </div>
-      
-        <div class="ui two column padded grid">
-        <div class="column">
+                  <h2 className = "heading2 text-center">STRESS RELIEF</h2>
+                  <div className = "text-center">
+                  <p><a className = "heading3 text-center" href=" https://www.youtube.com/watch?v=_f_BnneFanM">Relaxing Music</a></p>
+                  <p><a className = "heading3 text-center" href="  https://open.spotify.com/">Spotify </a></p>
+                  <p><a className = "heading3 text-center" href="      https://www.youtube.com/">YouTube </a></p>
+                  <p><a className = "heading3 text-center" href="  https://www.publix.com/pd/publix-chicken-tender-sub/BMO-DSB-100011">PUB SUB ORDER </a></p>
+                  </div>
 
-          <h1>MENTAL HEALTH</h1>
-            <h2>Resources</h2>
-          <p><a href=" https://www.mentalhealth.gov/basics/what-is-mental-health">Mental Health.gov/Basics</a></p>
-          <p><a href="   https://www.mentalhealth.gov/">Mental Health.gov</a></p>
-          <p><a href="  https://www.nimh.nih.gov/index.shtml">NIMH.NIH.gov</a></p>
+                  </Col>
 
-          <h2>Stress Relief</h2>
-          <p><a href=" https://www.youtube.com/watch?v=_f_BnneFanM">Music to relax to </a></p>
-          <p><a href="  https://open.spotify.com/">Spotify </a></p>
-          <p><a href="      https://www.youtube.com/">YouTube </a></p>
-          <p><a href="  https://www.publix.com/pd/publix-chicken-tender-sub/BMO-DSB-100011">Get yourself a chicken tender sub </a></p>
-          {/*Code a submit link button here  */}
-        
+                  <Col>
+                  <h2 className = "heading2 text-center">SHANDS</h2>
+                  <div className = "text-center">
+                  <p><a className = "heading3 text-center" href="https://ufhealth.org/">UF Health Official Website</a></p>
+                  <p><a className = "heading3 text-center" href=" https://ufhealth.org/shands-university-florida">Shands Official Website</a></p>
+                  <p><a className = "heading3 text-center" href="https://ufhealth.org/uf-health-shands-hospital-patient-guide/telephone-directory">Shands Patient Directory</a></p>
+                  </div>
+                  </Col>
+                </Row>
 
-        </div>
-        </div>
 
-        <div class="ui two column padded grid">
-        <div class="column">
-          <h1>Shands</h1>
-          <p><a href="https://ufhealth.org/">ufhealth.org</a></p>
-          <p><a href=" https://ufhealth.org/shands-university-florida">ufhealth-shands</a></p>
-          <p><a href="https://ufhealth.org/uf-health-shands-hospital-patient-guide/telephone-directory">Shands Patient Directory</a></p>
-        
-        </div>
-        </div>
-            </div>
-              {/* INSERT SUBMIT BUTTON THAT SENDS AN EMAIL OR DATA OR WHATEVER TO SUBMIT A NEW LINK */}
-          
-            </div>
 
-          );
+
+              </Container>
+              
+              </div>
+        );
 }

@@ -11,7 +11,7 @@ import Academics from './Components/Academics.js';
 import Finance from './Components/Finance.js';
 import Health from './Components/Health.js';
 import Housing from './Components/Housing.js';
-import GoogleMap from './Components/GoogleMap.js';
+import Map from './Components/Map.js';
 
 // TODO Add a 404 page
 // TODO commit package.json file
@@ -89,8 +89,8 @@ export default function App() {
           <Route path="/finance" component={Finance}/>
           <Route path="/health" component={Health}/>
           <Route path="/housing" component={Housing}/>
-          <Route path="/map" component={GoogleMap}>
-            <GoogleMap />
+          <Route path="/map" component={Map}>
+            <Map />
           </Route>
         </Switch>
     </Router>

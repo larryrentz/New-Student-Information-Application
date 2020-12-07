@@ -1,26 +1,19 @@
 import React from 'react';
 import FacebookPage from './FacebookAPI.js'
-import TwitterPage from './TwitterAPI.js'
+import './pageStyles.css';
 
 export default function Home() {
 
   var facebookProps = 
   {
-    width: "400",
+    width: "",
     height: ""
-  }
-
-  var twitterProps = 
-  {
-    width: 400,
-    height: 400
   }
 
   return (
     <div>
-      <h1>Home</h1>
+      <h1 className = "heading1" >Home</h1>
       <FacebookPage{...facebookProps}/>
-      <TwitterPage{...twitterProps}/>
     </div>
   );
 }
