@@ -5,6 +5,8 @@ src/server/config/config.js
 
 debug.log
 
+#Secret Keys
+.env
 # REACT files
 #--------------
 # dependencies
