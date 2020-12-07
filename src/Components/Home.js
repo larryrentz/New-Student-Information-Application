@@ -1,5 +1,6 @@
 import React from 'react';
 import FacebookPage from './FacebookAPI.js'
+import './pageStyles.css';
 
 export default function Home() {
 
@@ -11,7 +12,7 @@ export default function Home() {
 
   return (
     <div>
-      <h1>Home</h1>
+      <h1 className = "heading1" >Home</h1>
       <FacebookPage{...facebookProps}/>
     </div>
   );
