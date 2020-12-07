@@ -42,6 +42,126 @@ code {
   column-gap: 40px;
   column-rule-style: solid;
 }
+
+/*pagestyle.css*/
+.heading1 {
+    font-size: 45px;
+    color: #00529B;
+    opacity: 1;
+    z-index: 9;
+}
+
+.heading2 {
+    font-size: 30px;
+    color: #4C87B5;
+}
+
+.heading3 {
+    font-size: 15px;
+    color: #b15805;
+    text-decoration: underline #b15805;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+.heading3:hover {
+
+    background-color: #dd6f08;
+    color: #ffffff;
+
+}
+
+.headertext {
+    color: #ffffff;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.text1 {
+    font-size: 13.5px;
+    color: #333132;
+    font-weight: 500;
+}
+
+.text2 {
+    font-size: 13.5px;
+    font-weight: 500;
+}
+
+.body {
+    background-color: #dfcfcfa3;
+}
+
+.v1 {
+    border-left: 6px #00529B;
+    height: 1000px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
+}
+
+.headbord1 {
+    border: solid 3px #00529B;
+    border-right: solid 2px #00529B;
+    background-color: #dfcfcfa3;
+}
+
+.headbord2 {
+    border: solid 3px #00529B;
+    border-left: solid 2px #00529B;
+    background-color: #dfcfcfa3;
+}
+
+.headbord {
+    border: solid 3px #00529B;
+    background-color: #dfcfcfa3;
+}
+
+.leftcol {
+    border-right: solid 2px #00529B;
+}
+
+.rightcol {
+    border-left: solid 2px #00529B;
+}
+
+.main {
+    margin-top: 116px;
+}
+
+.checkered{
+    height: 240px;
+    background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0.0980392) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.0980392) 75%, rgba(0, 0, 0, 0.0980392) 0), -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0.0980392) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.0980392) 75%, rgba(0, 0, 0, 0.0980392) 0), white;
+    background: -moz-linear-gradient(45deg, rgba(0, 0, 0, 0.0980392) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.0980392) 75%, rgba(0, 0, 0, 0.0980392) 0), -moz-linear-gradient(45deg, rgba(0, 0, 0, 0.0980392) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.0980392) 75%, rgba(0, 0, 0, 0.0980392) 0), white;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.0980392) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.0980392) 75%, rgba(0, 0, 0, 0.0980392) 0), linear-gradient(45deg, rgba(0, 0, 0, 0.0980392) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.0980392) 75%, rgba(0, 0, 0, 0.0980392) 0), white;
+    background-repeat: repeat, repeat;
+    background-position: 0px 0, 5px 5px;
+    -webkit-transform-origin: 0 0 0;
+    transform-origin: 0 0 0;
+    -webkit-background-origin: padding-box, padding-box;
+    background-origin: padding-box, padding-box;
+    -webkit-background-clip: border-box, border-box;
+     background-clip: border-box, border-box;
+    -webkit-background-size: 10px 10px, 10px 10px;
+    background-size: 10px 10px, 10px 10px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    text-shadow: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
+    -webkit-transform: scaleX(1) scaleY(1) scaleZ(1);
+    transform: scaleX(1) scaleY(1) scaleZ(1);
+    opacity: 0.5;
+}
+
+.bg {
+    background: url(./Components/bg3.JPG);
+}
+
+
 /*
 .column {
   float: left;

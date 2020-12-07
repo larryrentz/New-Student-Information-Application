@@ -1,4 +1,4 @@
- 
+
 .App {
   text-align: center;
 }
@@ -44,7 +44,6 @@
 .topnav {
   background-color: #dd6f08;
   overflow: hidden;
-  position: fixed;
   top: 0;
   width: 100%;
   z-index: 9;
@@ -57,7 +56,7 @@
   text-align: center;
   padding: 25px 25px;
   text-decoration: none;
-  font-size: 44px;
+  font-size: 200%;
   font-weight: bold;
   transition: 0.2s;
 }
