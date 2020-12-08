@@ -16,7 +16,7 @@ const ViewFootballClub = (props) => {
   return (
     <div>
       <div style={{ alignItems: "center", justifyContent: "center" }}>
-        <i style={{ color: "white" }}>
+        <i style={{ color: "black" }}>
           Click to see the full Story
         </i>
 
@@ -24,7 +24,9 @@ const ViewFootballClub = (props) => {
         {props.viewFootballClub['visible'] && getFootballClubData() && (
           <div class="ui card fluid">
             <div class="content">
-
+            <button onClick={() => props.setViewFootballClub(false)} type="button" class="close" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
               {/*you could find a getter or setter that would make this by the user's email name , else make it by anonymous*/}
               <h class="header">Anonymous User</h>
               <div class="ui divider"></div>

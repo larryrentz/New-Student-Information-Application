@@ -16,7 +16,7 @@ export default function ContactUs() {
     }
 
     return(
-        <div>
+        <div class="pad-form">
             <div className="container-fluid bg">
             <form onSubmit={sendEmail}>
             <div class="contact">
