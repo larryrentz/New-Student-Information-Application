@@ -127,7 +127,7 @@ code {
 }
 
 .main {
-    margin-top: 116px;
+    margin-top: 0px;
 }
 
 .checkered{
@@ -159,6 +159,7 @@ code {
 
 .bg {
     background: url(./Components/bg3.JPG);
+    min-height: 100vh;
 }
 
 
