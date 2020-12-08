@@ -89,7 +89,7 @@ class Login extends React.Component {
                       />
                     }
                     </div>
-              
+
             </div>
           )
         }
@@ -123,7 +123,7 @@ const PrivateRoute = ({ component: Component, ...rest }) => (
 export default function App() {
   return (
     <Router>
-      
+
       <div>
         <div class="topnav">
           <a class="active" href="/">UF</a>
@@ -171,10 +171,10 @@ export default function App() {
         */}
 
 
-        <div>
-        <AuthButton />
+        <div className="bg">
+          <AuthButton />
         </div>
-      
+
 {/*
         <ul>
           <li><Link to="/public">Public Page</Link></li>
@@ -182,7 +182,7 @@ export default function App() {
         </ul>
 
         <Route path="/public" component={Public} />
-        you must login to see this page plus the login 
+        you must login to see this page plus the login
         <Route path="/login" component={Login} />
         <PrivateRoute path='/protected' component={Protected} />
       </div>
@@ -195,8 +195,8 @@ export default function App() {
           {/* <Route path="/log_in">
             <log_in />
           </Route> */}
-        
-         
+
+
           <PrivateRoute path="/academics" component={Academics}/>
           <PrivateRoute path="/finance" component={Finance}/>
           <PrivateRoute path="/health" component={Health}/>
