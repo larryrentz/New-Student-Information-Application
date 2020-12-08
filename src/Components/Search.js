@@ -11,11 +11,11 @@ const Search = (props) => {
   //Note when adding a new club searching for data will most likely crash the site
     props.setFilteredClubs(getFilteredClubs(event.target.value, props.data))
   }
-  
+
 
   return (
     <div>
-      <div  style={{ marginTop: "1rem" }} class="ui search fluid">
+      <div  style={{ marginTop: "10px", width: "100%", padding: "3%" }}>
         <div class="ui icon input">
           {/*Search Bar */}
           <input

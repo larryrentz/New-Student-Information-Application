@@ -1,0 +1,25 @@
+
+.half-page-left {
+  width: 50%;
+  float: left;
+}
+
+.half-page-right {
+  width: 50%;
+  float: right;
+  text-align: center;
+}
+
+.top-header {
+  color: darkOrange;
+  marginTop: 10px;
+  padding: 3%;
+}
+
+.clear {
+  clear: both;
+}
+
+.contact {
+  text-align: center;
+}

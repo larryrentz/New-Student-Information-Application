@@ -17,8 +17,11 @@ export default function ContactUs() {
 
     return(
         <div>
-            <div className="container">
+            <div className="container-fluid bg">
             <form onSubmit={sendEmail}>
+            <div class="contact">
+              <h3>Message us with any feedback!</h3>
+            </div>
                     <div className="row pt-5 mx-auto">
                         <div className="col-8 form-group mx-auto">
                             <input type="text" className="form-control" placeholder="Name" name="name"/>
