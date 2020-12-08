@@ -1,6 +1,8 @@
 import * as controller from '../controllers/controller.js';
 import express from 'express'; //refers to Express the middleware helper for Node.js
 
-const router = express.Router();
+const postRouter = express.Router();
 
-export default router; 
+//postRouter.post('/home', controller.create);
+
+export default postRouter; 
