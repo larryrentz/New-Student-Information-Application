@@ -15,15 +15,16 @@ const Search = (props) => {
 
   return (
     <div>
-      <div  style={{ marginTop: "10px", width: "100%", padding: "3%" }}>
+      <div style={{ marginTop: "10px", width: "100%", padding: "3%" }}>
         <div class="ui icon input">
           {/*Search Bar */}
           <input
             onChange={getFilterText}
+            style={{width: "600px", borderRadius: "10px"}}
             class="prompt"
             type="text"
-            placeholder="Filter Search...( ͡° ͜ʖ ͡°)" ></input>
-
+            placeholder="Filter Search...( ͡° ͜ʖ ͡°)" >
+          </input>
           <i class="search icon"></i>
         </div>
       </div>

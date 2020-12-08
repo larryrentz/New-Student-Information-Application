@@ -77,7 +77,7 @@ export default function Home() {
                   setAddFootballClub={setAddFootballClub} />)}
               </div>
               <div>
-              <div style={{width: "100%", padding: "5%"}}>
+              <div style={{width: "100%", padding: "3%"}}>
                 <ViewFootballClub
                   data={data}
                   viewFootballClub={viewFootballClub}
@@ -85,9 +85,9 @@ export default function Home() {
               </div>
                 <div class="row">
                   {/*Width of the table that shows all the posts */}
-                  <div style={{ width: "100%", padding: "3%" }} class="" >
+                  <div style={{ width: "100%", padding: "2%"}} class="my-custom-scrollbar" >
                     {/*The table that holds the posts */}
-                    <table class="stackable single line table-striped selectable table padded table-hover">
+                    <table class="table-striped table-bordered table-dark selectable table padded table-hover">
                       <thead>
                         <tr>
                           <th>Title</th>
@@ -115,8 +115,12 @@ export default function Home() {
       </div>
     </div>
     <div class="half-page-right">
-      <FacebookPage{...facebookProps}/>
-      <TwitterPage{...twitterProps}/>
+      <div class="pad">
+        <FacebookPage{...facebookProps}/>
+      </div>
+      <div class="pad">
+        <TwitterPage{...twitterProps}/>
+      </div>
     </div>
     <div className="container" class="clear">
       <ContactUs/>
