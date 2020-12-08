@@ -1,49 +1,3 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-
-
-/* Make sure that padding behaves as expected */
-* {box-sizing:border-box}
-
-/* Container for skill bars */
-.container {
-  width: 100%; /* Full width */
-  background-color: #ddd; /* Grey background */
-}
-
-.skills {
-  text-align: right; /* Right-align text */
-  padding-top: 10px; /* Add top padding */
-  padding-bottom: 10px; /* Add bottom padding */
-  color: white; /* White text color */
-}
-
-.html {width: 100%; background-color: #0033ff;} /* Green */
-
-
-
-
-
-
-.students {
-  column-count: 1;
-  column-gap: 40px;
-  column-rule-style: solid;
-}
-
-/*pagestyle.css*/
 .heading1 {
     font-size: 45px;
     color: #00529B;
@@ -68,7 +22,7 @@ code {
 
     background-color: #dd6f08;
     color: #ffffff;
-
+    
 }
 
 .headertext {
@@ -127,7 +81,7 @@ code {
 }
 
 .main {
-    margin-top: 0px;
+    margin-top: 116px;
 }
 
 .checkered{
@@ -158,21 +112,6 @@ code {
 }
 
 .bg {
-    background: url(./Components/bg3.JPG);
+    background: url(./bg3.JPG);
 }
 
-
-/*
-.column {
-  float: left;
-  width: 25%;
-  padding: 10px;
-  height: 300px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-/* Clear floats after the columns */

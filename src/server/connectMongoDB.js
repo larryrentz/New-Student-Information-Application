@@ -12,7 +12,9 @@ const {
 
 /* Connect to your database using mongoose */
 const connectToDatabase = () => {
+
   const link = `${DB_URI}`;
+
   //see https://mongoosejs.com/docs/connections.html
   //See https://docs.atlas.mongodb.com/driver-connection/
   mongoose

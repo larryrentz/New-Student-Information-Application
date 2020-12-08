@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -41,8 +42,11 @@
 /*NAVIGATION BAR*/
 
 .topnav {
-  background-color: #ff6600;
+  background-color: #dd6f08;
   overflow: hidden;
+  top: 0;
+  width: 100%;
+  z-index: 9;
 }
 
 /* Style the links inside the navigation bar */
@@ -52,25 +56,35 @@
   text-align: center;
   padding: 25px 25px;
   text-decoration: none;
-  font-size: 44px;
+  font-size: 200%;
+  font-weight: bold;
+  transition: 0.2s;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: #ddd;
   color: black;
+  text-decoration: underline  #dd6f08;
 }
 
 /* UF logo */
 .topnav a.active {
-  background-color: #0033ff;
+  background-color: #1069b6;
   color: white;
+  text-decoration: none;
+}
+
+.topnav a.active:hover {
+  background-color: #0e5fa5;
+  color: white;
+  text-decoration: none;
 }
 
 
 /* DISCLAIMER TEXT*/
 .page_disclaim {
-  background-color: #0033ff;
+  background-color: #1069b6;
   float: right;
   text-align: center;
   color: white;
@@ -83,9 +97,10 @@
   border-style: solid;
   padding: 1px;
   text-align: center;
-  background: #0033ff;
+  background: #1069b6;
   color: white;
   font-size: 15px;
+  border-bottom: 2px;
 
 }
 
@@ -102,6 +117,7 @@
   float: left;
   width: 50%;
   padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
 }
 
 /* Clear floats after the columns */

@@ -32,7 +32,8 @@ if(process.env.NODE_ENV === 'production') {
 }
 
 app.all('/*', (req, res) => {
- res.statusCode === 404 ? res.send('Sorry, information not available') : res.sendFile(path.resolve('./client/index.html'))  
+ res.statusCode === 404 ? res.send('Sorry, information not available') : res.sendFile(path.resolve('./client/index.html'))
 });
 
-app.listen(PORT, () => console.log(`App now listening on http://localhost:${PORT}`)); 
+
+app.listen(PORT, () => console.log(`App now listening on http://localhost:${PORT}`));
