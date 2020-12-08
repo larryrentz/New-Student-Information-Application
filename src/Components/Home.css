@@ -1,0 +1,41 @@
+
+.half-page-left {
+  width: 50%;
+  float: left;
+}
+
+.half-page-right {
+  width: 50%;
+  float: right;
+  text-align: center;
+}
+
+.my-custom-scrollbar {
+position: relative;
+height: 1150px;
+overflow: auto;
+}
+
+.top-header {
+  color: darkOrange;
+  marginTop: 10px;
+  padding: 3%;
+}
+
+.clear {
+  clear: both;
+  padding: 5px;
+}
+
+.contact {
+  text-align: center;
+}
+
+.pad-form {
+  padding: 3%;
+  border-top: 2px solid darkOrange;
+}
+
+.pad {
+  padding: 10px;
+}
