@@ -57,7 +57,11 @@ export default function Home() {
     <div className="App">
       <div className="bge">
         <div style={{marginLeft: "1490px"}}>
+<<<<<<< HEAD
           
+=======
+          <GoogleBtn/>
+>>>>>>> 1bbece3f7061db1ff467c387c60a3cc9854b8f04
         </div>
         <div>
           <div style={{ paddingTop: "5%", paddingBottom: "10px" }} class="ui container">

@@ -126,7 +126,7 @@ export default function App() {
       
       <div>
         <div class="topnav">
-          <a class="active" href="#logo">UF</a>
+          <a class="active" href="/">UF</a>
 
 {/*the titles of the different navigation links*/ }
           <div>
