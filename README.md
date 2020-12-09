@@ -6,9 +6,9 @@ A new University of Florida information hub and forum, with built in Facebook an
 
 Clone the repository to your local machine and once that has finished we need to install our dependencies.
 
-'''bash
+```bash
 npm install
-'''
+```
 
 Create a .env file in the main directory of the project.
 copy and paste the environment variables provided to the file.
