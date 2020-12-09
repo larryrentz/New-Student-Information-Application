@@ -23,13 +23,13 @@ export default function Home() {
 
   var facebookProps =
   {
-    width: "400",
+    width: "300",
     height: "700"
   }
 
   var twitterProps =
   {
-    width: "400",
+    width: "300",
     height: "700"
   }
 
