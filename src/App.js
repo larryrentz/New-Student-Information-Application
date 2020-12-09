@@ -23,6 +23,8 @@ import { GoogleLogin, GoogleLogout } from 'react-google-login';
 require('dotenv').config();
 
 
+document.title = "GatorAider";
+
 const {
   REACT_APP_GOOGLE_LOGIN_API_KEY
 } = process.env;
@@ -171,7 +173,7 @@ export default function App() {
         */}
 
 
-        <div className="bg">
+        <div className = "bgbutton">
           <AuthButton />
         </div>
 
