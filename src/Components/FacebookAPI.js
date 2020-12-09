@@ -1,8 +1,8 @@
 import React from 'react';
 import { FacebookProvider, Page } from 'react-facebook';
-//import config from '../server/config/config.js'
 
-require('dotenv').config();
+import dotenv from 'dotenv'
+dotenv.config();
 
 const {
   FACEBOOKAPP_ID

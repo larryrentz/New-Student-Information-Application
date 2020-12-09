@@ -6,7 +6,8 @@ import PlacesAutocomplete, {
   getLatLng,
 } from 'react-places-autocomplete';
 
-require('dotenv').config();
+import dotenv from 'dotenv'
+dotenv.config();
 
 const {
   REACT_APP_GOOGLE_API_KEY

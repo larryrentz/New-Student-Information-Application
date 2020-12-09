@@ -2,15 +2,16 @@ import path from 'path';
 import express from 'express';
 import {connectToDatabase} from './connectMongodb.js';
 
-//const postRouter = require('./routes/router');
 import {postRouter} from './routes/router.js';
 
 
 //require('dotenv').config();
+import dotenv from 'dotenv'
+dotenv.config();
 
-// const {
-//   PORT
-// } = process.env;
+const {
+   PORT
+} = process.env;
 
 //connect to database
 const db = connectToDatabase().on(
@@ -43,5 +44,5 @@ app.all('/*', (req, res) => {
 });
 
 
-//app.listen(PORT, () => console.log(`App now listening on http://localhost:${PORT}`));
-app.listen(3000, () => console.log(`App now listening on http://localhost:${3000}`));
+app.listen(PORT, () => console.log(`App now listening on http://localhost:${PORT}`));
+
