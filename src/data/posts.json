@@ -9,13 +9,9 @@
 	
 	{ "title": "Hey I just met you" , "content": "Distance Learning Fees are dumb" , "category": "Lifestyle" , "search":["Coivd", "Carly Rae"] },
 	
-	{ "title": "And this is crazy" , "content": "Chemistry is Bullshit" , "category": "Class" , "search":["complaints"] },
-	
 	{ "title": "Here's my number" , "content": "Nintendo 64s for Sale call 555-252-9887" , "category": "Lifestyle" , "search":["Spam"] },
 	
 	{ "title": "So call me maybe" , "content": "Man if you are reading this call 352-375-2775" , "category": "Lifestyle" , "search":["firestation 38"] },
-	
-	{ "title": "I really Screwed Up" , "content": "IM PREGNANT" , "category": "Life Changing" , "search":["Congratulation", "Baby Names"] },
 	
 	{ "title": "Halo LAN" , "content": "HALO LAN PARTY IN REITZ BASEMENT THIS WEEKEND" , "category": "Video Games" , "search":["HALO", "LAN", "PC", "WOOOO"] },
 	
@@ -29,8 +25,6 @@
 	
 	{ "title": "Christmas" , "content": "Christmas PArty at Thomas Hall come and Join and make friends safely" , "category": "Informational" , "search":["Party", "1999", "FUN"] },
 	
-	{ "title": "Squatting in the dorms" , "content": "If You want to come squat out Broward Hall come to floor 4 room 5" , "category": "Informational" , "search":["illegal", "Vagrant Holiday"] },
-	
 	{ "title": "HELLO BABY" , "content": "Do not choose Rawlings hall as your dorm it is hell" , "category": "Informational" , "search":["Bad experience", "0 star review"] },
 	
 	{ "title": "Sunday Post" , "content": "Happy Sunday Everybody" , "category": "Informational" , "search":["The Lord's Day"] },
@@ -40,8 +34,6 @@
 	{ "title": "Chicken Tender Subs on Sale" , "content": "THEY ARE ON SALE GO GRAB THEM" , "category": "Informational" , "search":["Food","Pub Sub"] },
 	
 	{ "title": "Virginia" , "content": "Cavaliers game in Hume Hall" , "category": "Informational" , "search":["games"] },
-	
-	{ "title": "Oregano" , "content": "I got hook ups find the path to the rainbow road" , "category": "Informational" , "search":["weed"] },
 	
 	{ "title": "Digital Logic with Schwartz" , "content": "For the love of god do not take it" , "category": "Informational" , "search":["hell"] },
 	
