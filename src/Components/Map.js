@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import GoogleMap, {addMarkers, locationList, mapOptions} from './GoogleMap.js';
 
 export default function Map() {
@@ -7,7 +7,8 @@ export default function Map() {
     onMount: addMarkers,
     onMountProps: locationList,
   }
-  
+  const [selectedCenter, setSelectedCenter] = useState(null);
+
   return (
     <div>
       <h1>Map</h1>

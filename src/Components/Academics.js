@@ -3,7 +3,7 @@ import {Container, Row, Col} from 'reactstrap';
 
 export default function Academics() {
         return (
-            <div className="AcademicsPage main bg">
+            <div className="AcademicsPage main bg" style={{minHeight: "100vh"}}>
               <Container fluid>
 
                 <Row>
@@ -11,7 +11,7 @@ export default function Academics() {
                     <h1 className = "heading1 text-center">UNDERGRADUATE RESOURCES</h1>
                   </Col>
 
-                  <Col className = "headbord2"> 
+                  <Col className = "headbord2">
                     <h1 className = "heading1 text-center">GRADUATE RESOURCES</h1>
                   </Col>
                 </Row>
@@ -57,7 +57,7 @@ export default function Academics() {
                       <h2 className = "heading2">SCHOLARSHIPS</h2>
                       <p><a className = "heading3" href="https://cur.aa.ufl.edu/scholarships/"
                       target="_blank" rel="noopener noreferrer">Center for Undergraduate Research:</a>
-                      <text className = "text1"> The Center for Undergraduate Research offers several scholarship programs. The Scholars Programs introduces undergraduate students at the University of FLorida to exciting world of academic research.</text>
+                      <text className = "text1"> The Center for Undergraduate Research offers several scholarship programs. The Scholars Programs introduces undergraduate students at the University of Florida to exciting world of academic research.</text>
                       </p>
 
                     </Col>

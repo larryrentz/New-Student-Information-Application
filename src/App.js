@@ -14,14 +14,11 @@ import Finance from './Components/Finance.js';
 import Health from './Components/Health.js';
 import Housing from './Components/Housing.js';
 import GoogleMap from './Components/GoogleMap.js';
-import GoogleBtn from './Components/GoogleBtn';
-
-
-
-
 import { GoogleLogin, GoogleLogout } from 'react-google-login';
 require('dotenv').config();
 
+
+document.title = "GatorAider";
 
 const {
   REACT_APP_GOOGLE_LOGIN_API_KEY
@@ -29,11 +26,7 @@ const {
 
 
 const CLIENT_ID = `${REACT_APP_GOOGLE_LOGIN_API_KEY}`;
-//import Login from './Components/sss.js'
-// TODO Add a 404 page
-// TODO commit package.json file
-// TODO make the homepage the default first page
-// TODO! MORTGAGE.JS WAS INSTALLED, react-compound-interestwas installed, interest.js installed, Passport.js installed
+
 
 const fakeAuth = {
   isAuthenticated: false,
@@ -47,8 +40,6 @@ const fakeAuth = {
   }
 }
 
-//const Public = () => <h3>Public</h3>
-//const Protected = () => <h3>Protected</h3>
 
 class Login extends React.Component {
         state = {
@@ -84,12 +75,11 @@ class Login extends React.Component {
                         buttonText='Login'
                         onSuccess={ this.login }
                         onFailure={ this.handleLoginFailure }
-                        cookiePolicy={ 'single_host_origin' }
                         responseType='code,token'
                       />
                     }
                     </div>
-              
+
             </div>
           )
         }
@@ -123,10 +113,10 @@ const PrivateRoute = ({ component: Component, ...rest }) => (
 export default function App() {
   return (
     <Router>
-      
+
       <div>
         <div class="topnav">
-          <a class="active" href="/">UF</a>
+          <a class="active" href="#logo">UF</a>
 
 {/*the titles of the different navigation links*/ }
           <div>
@@ -171,22 +161,9 @@ export default function App() {
         */}
 
 
-        <div>
-        <AuthButton />
+        <div className = "bgbutton">
+          <AuthButton />
         </div>
-      
-{/*
-        <ul>
-          <li><Link to="/public">Public Page</Link></li>
-          <li><Link to="/protected">Protected Page</Link></li>
-        </ul>
-
-        <Route path="/public" component={Public} />
-        you must login to see this page plus the login 
-        <Route path="/login" component={Login} />
-        <PrivateRoute path='/protected' component={Protected} />
-      </div>
-      */}
 
         <Switch>
         <Route path="/login" component={Login} />
@@ -195,8 +172,8 @@ export default function App() {
           {/* <Route path="/log_in">
             <log_in />
           </Route> */}
-        
-         
+
+
           <PrivateRoute path="/academics" component={Academics}/>
           <PrivateRoute path="/finance" component={Finance}/>
           <PrivateRoute path="/health" component={Health}/>

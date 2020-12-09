@@ -1,12 +1,16 @@
 import path from 'path';
 import express from 'express';
-//import config from './config/config.js'
 import {connectToDatabase} from './connectMongodb.js';
 
-require('dotenv').config();
+import {postRouter} from './routes/router.js';
+
+
+//require('dotenv').config();
+import dotenv from 'dotenv'
+dotenv.config();
 
 const {
-  PORT
+   PORT
 } = process.env;
 
 //connect to database
@@ -21,6 +25,7 @@ const db = connectToDatabase().on(
 
 const app = express();
 
+
 //Serve static assets if in production
 if(process.env.NODE_ENV === 'production') {
   //set static folder
@@ -31,9 +36,13 @@ if(process.env.NODE_ENV === 'production') {
   });
 }
 
+app.use('/api', postRouter);
+
+
 app.all('/*', (req, res) => {
  res.statusCode === 404 ? res.send('Sorry, information not available') : res.sendFile(path.resolve('./client/index.html'))
 });
 
 
 app.listen(PORT, () => console.log(`App now listening on http://localhost:${PORT}`));
+
