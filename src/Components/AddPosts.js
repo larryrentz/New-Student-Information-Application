@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { addFootballClubData } from "../Functions/AppFunctions";
+import { addPostData } from "../Functions/AppFunctions";
 //Now we write to a JSON file
 //var fs = require('fs');
 //var data = fs.readFileSync('../posts.json');
@@ -30,36 +30,27 @@ const submit = () => {
       let _new_post = {};
       if (!search) {
         _new_post = {
-          school: title,
-          mascot: content,
-          conference: category,
+          title: title,
+          content: content,
+          category: category,
           id: id,
         };
       } else {
         _new_post = {
-          school: title,
-          mascot: content,
-        //  note that school must be there for the title to show up in the page
-          conference: category,
+          title: title,
+          content: content,
+       
+          category: category,
           search: search.split(","),
           id: id,
         };
       }
-      props.setData(addFootballClubData(_new_post, props.data));
-      props.setAddFootballClub(false);
+      props.setData(addPostData(_new_post, props.data));
+      props.setAddPost(false);
 
 
      
-      /*
-//write all the post data to Json File for permanence
-        var cmnderData = JSON.stringify(words);
-        writeFile('posts.json', cmnderData, finished);
-        function finished(err)
-        {
-          console.log('hehehehehhehe');
-        }
-        */
-
+      
     }
 
     //we want to write this data to the JSON File

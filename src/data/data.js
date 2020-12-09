@@ -1,9 +1,9 @@
-import schools from './posts.json'
+import posts from './posts.json'
 
 const getData = () => {
   let all_posts = [];
   let id = 1;
-    schools.forEach(element => {
+    posts.forEach(element => {
         element["id"] = id
         all_posts.push(element)
        

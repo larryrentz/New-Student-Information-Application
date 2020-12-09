@@ -5,19 +5,18 @@ import React, { useState } from "react";
 
 
 import Search from "./Search";
-import ViewFootballClub from "./ViewFootballClub";
-import FootballClubLists from "./FootballClubLists";
+import ViewForumPost from "./ViewForumPost";
+import ForumPostLists from "./ForumPostLists";
 import AddPost from "./AddPosts";
-import RemoveFootballClub from "./RemoveFootballClub";
-import EditFootballClub from "./editFootballClub";
+
+
 import { getData } from "../data/data";
-import GoogleLogin from 'react-google-login'
-import GoogleBtn from './GoogleBtn';
+
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ContactUs from './contactForm';
 import './Home.css';
-import {Container, Row, Col} from 'reactstrap';
+
 
 
 export default function Home() {
@@ -35,20 +34,12 @@ export default function Home() {
   }
 
   const [data, setData] = useState(getData());
-  const [filteredClubs, setFilteredClubs] = useState([]);
-  const [delFootballClub, setDelFootballClub] = useState({
-    visible: false,
-    id: null,
-  });
-  const [editFootballClub, setEditFootballClub] = useState({
-    visible: false,
-    id: null,
-  });
-  const [viewFootballClub, setViewFootballClub] = useState({
+  const [filteredPosts, setFilteredPosts] = useState([]);
+  const [viewForumPost, setViewForumPost] = useState({
     visible: false,
     id: 0,
   });
-  const [addFootballClub, setAddFootballClub] = useState(false);
+  const [addPost, setAddPost] = useState(false);
 
   const responseGoogle = (response) => {
     console.log(response);
@@ -61,27 +52,27 @@ export default function Home() {
       <div className="bge">
           <div class="half-page-left">
             <h1 class="heading1 headbord1">Welcome To Gator Aider</h1>
-            <Search data={data} setFilteredClubs={setFilteredClubs} />
+            <Search data={data} setFilteredPosts={setFilteredPosts} />
             <main className="main">
               {/*Button to create a new post */}
-              <button onClick={() => setAddFootballClub(true)}
+              <button onClick={() => setAddPost(true)}
                 class="ui button orange">
                 New Post
               </button>
               {/*The add post window at the bottom of the page */}
               <div style={{ marginLeft: "" }} class="">
-                {addFootballClub && (
+                {addPost && (
                 <AddPost
                   setData={setData}
                   data={data}
-                  setAddFootballClub={setAddFootballClub} />)}
+                  setAddPost={setAddPost} />)}
               </div>
               <div>
               <div style={{width: "100%", padding: "3%"}}>
-                <ViewFootballClub
+                <ViewForumPost
                   data={data}
-                  viewFootballClub={viewFootballClub}
-                  setViewFootballClub={setViewFootballClub}/>
+                  viewForumPost={viewForumPost}
+                  setViewForumPost={setViewForumPost}/>
               </div>
                 <div class="row">
                   {/*Width of the table that shows all the posts */}
@@ -94,15 +85,15 @@ export default function Home() {
                           <th>Category</th>
                         </tr>
                       </thead>
-                      <FootballClubLists
+                      <ForumPostLists
                         data={data}
-                        filteredClubs={filteredClubs}
-                        setViewFootballClub={setViewFootballClub} />
+                        filteredPosts={filteredPosts}
+                        setViewForumPost={setViewForumPost} />
                       {/*this shows the filtered posts in the table  */}
                       <tfoot>
                         <tr>
                           <th>
-                          {filteredClubs !== null && filteredClubs.length !== 0 ? "Search results: " + filteredClubs.length: data.length}{" "}Post(s)
+                          {filteredPosts !== null && filteredPosts.length !== 0 ? "Search results: " + filteredPosts.length: data.length}{" "}Post(s)
                           </th>
                         </tr>
                       </tfoot>
