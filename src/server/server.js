@@ -1,6 +1,5 @@
 import path from 'path';
 import express from 'express';
-//import config from './config/config.js'
 import {connectToDatabase} from './connectMongodb.js';
 
 require('dotenv').config();
