@@ -4,10 +4,10 @@ import {Container, Row, Col} from 'reactstrap';
 export default function Health() {
         return (
             <div className="HealthPage main bg">
-              <div class="header">
+              <div class="header-disclaim">
               {/* do not change ^ to header */}
               <h3 className="headertext">In an emergency call 911. For mental distress call the suicide hotline at 1-800-273-8255</h3>
-            </div>   
+            </div>
 
               <Container fluid>
                 <Row>
@@ -92,7 +92,7 @@ export default function Health() {
                     <text className = "text1"> Official University of Florida information on COVID-19.</text>
                     </p>
 
-                    
+
                   </Col>
 
                 </Row>
@@ -136,7 +136,7 @@ export default function Health() {
 
 
               </Container>
-              
+
               </div>
         );
 }
