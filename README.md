@@ -11,7 +11,7 @@ npm install
 ```
 
 Create a .env file in the main directory of the project.
-copy and paste the environment variables provided to the file.
+Copy and paste the environment variables provided to the file.
 
 ## Usage
 
