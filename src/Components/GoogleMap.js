@@ -1,6 +1,6 @@
 //import config from '../server/config/config.js'
 import React, { Component } from 'react';
-import {Map, Marker, GoogleApiWrapper} from 'google-maps-react';
+import {Map, Marker, GoogleApiWrapper, InfoWindow} from 'google-maps-react';
 import PlacesAutocomplete, {
   geocodeByAddress,
   getLatLng,
@@ -22,7 +22,7 @@ export class MapContainer extends Component {
       showingInfoWindow: false,
       activeMarker: {},
       selectedPlace: {},
-  
+
       mapCenter: {
         lat: 29.6436,
         lng: -82.3549
@@ -58,7 +58,7 @@ export class MapContainer extends Component {
   handleChange = address => {
     this.setState({ address });
   };
- 
+
   handleSelect = address => {
     this.setState({ address });
     geocodeByAddress(address)
@@ -71,12 +71,12 @@ export class MapContainer extends Component {
         this.setState({address});
       })
       .catch(error => console.error('Error', error));
- 
- 
- 
- 
+
+
+
+
     };
- 
+
   render() {
     return (
       <div id='googleMaps'>
@@ -119,7 +119,7 @@ export class MapContainer extends Component {
           )}
         </PlacesAutocomplete>
 
-        <Map 
+        <Map
           google={this.props.google}
           initialCenter={{
             lat: this.state.mapCenter.lat,
@@ -130,37 +130,38 @@ export class MapContainer extends Component {
             lng: this.state.mapCenter.lng
           }}
         >
-          <Marker 
+          <Marker
             position={{
               lat: this.state.mapCenter.lat,
               lng: this.state.mapCenter.lng,
             }} />
 
-          <Marker 
+          <Marker
             position={{
               lat: this.state.mapMarker.lat,
               lng: this.state.mapMarker.lng,
             }} />
 
 
-            <Marker 
+            <Marker
             position={{
               lat: this.state.mapGriffin.lat,
               lng: this.state.mapGriffin.lng,
+              content:'<h3>Ben Hill Griffin Stadium</h3>'
             }} />
 
-            <Marker 
+            <Marker
             position={{
               lat: this.state.mapConnel.lat,
               lng: this.state.mapConnel.lng,
             }} />
 
-          <Marker 
+          <Marker
             position={{
               lat: this.state.mapRec.lat,
               lng: this.state.mapRec.lng,
             }} />
-             <Marker 
+             <Marker
             position={{
               lat: this.state.mapCISE.lat,
               lng: this.state.mapCISE.lng,

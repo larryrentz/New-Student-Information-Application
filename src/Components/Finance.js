@@ -1,7 +1,7 @@
 import React from 'react';
 import {Container, Row, Col} from 'reactstrap';
-/*import MortgageCalculator from "mortgage-calculator-react";
-import CompoundInterest from 'react-compound-interest'; */
+import MortgageCalculator from "mortgage-calculator-react";
+import CompoundInterest from 'react-compound-interest';
 
 export default function Finance() {
         return (
@@ -13,7 +13,7 @@ export default function Finance() {
                     <h1 className = "heading1 text-center">FINANCIAL AID</h1>
                   </Col>
 
-                  <Col className = "headbord2"> 
+                  <Col className = "headbord2">
                     <h1 className = "heading1 text-center">FINANCIAL LITERACY</h1>
                   </Col>
                 </Row>
@@ -77,7 +77,7 @@ export default function Finance() {
                   <h1 className = "heading1 text-center">INVESTING</h1>
                   </Col>
 
-                  <Col className = "headbord2"> 
+                  <Col className = "headbord2">
                     <h1 className = "heading1 text-center">LOAN CALCULATOR</h1>
                   </Col>
                 </Row>
@@ -85,7 +85,7 @@ export default function Finance() {
                 <Row>
 
                   <Col className = "leftcol">
-                    
+
                       <p><a className = "heading3" href=" https://ufsic.com/index.html" target="_blank" rel="noopener noreferrer">Student Investment Club:</a>
                       <text className = "text1"> UF Student Investment Club Official Website.</text>
                       </p>
@@ -105,7 +105,10 @@ export default function Finance() {
                       <p><a className = "heading3" href="https://www.nerdwallet.com/article/investing/retirement-investments-beginners-guide" target="_blank" rel="noopener noreferrer">Saving for Retirment:</a>
                       <text className = "text1"> How to provide for yourself long after you're done with college.</text>
                       </p>
-        
+                      <h2 class="heading1 text-center">Mortgage Calculator</h2>
+                      <div>
+                       <MortgageCalculator/>
+                      </div>
 
                   </Col>
 
@@ -122,12 +125,15 @@ export default function Finance() {
                      <p><a className = "heading3" href=" https://finaid.org/calculators/loanpayments/" target="_blank" rel="noopener noreferrer">Loan Payment Calculator:</a>
                      <text className = "text1"> Estimate the size of your monthly loan payments.</text>
                      </p>
-
+                     <h2 class="heading1 text-center">Compound Interest Calculator </h2>
+                     <div>
+                      <CompoundInterest title="Compound Interest Calculator" />
+                     </div>
                   </Col>
                 </Row>
 
               </Container>
-        
+
             </div>
           );
 }
