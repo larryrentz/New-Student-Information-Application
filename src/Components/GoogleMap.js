@@ -26,7 +26,32 @@ export class MapContainer extends Component {
       mapCenter: {
         lat: 29.6436,
         lng: -82.3549
+      },
+
+      mapMarker: {
+        lat: 29.6481,
+        lng: -82.3437
+      },
+
+      mapGriffin: {
+        lat: 29.6499,
+        lng: -82.3487
+      },
+
+      mapConnel: {
+        lat: 29.6494,
+        lng: -82.3512
+      },
+
+      mapRec: {
+        lat: 29.6501,
+        lng: -82.3466
+      },
+      mapCISE: {
+        lat: 29.6485,
+        lng: -82.3438
       }
+
     };
   }
 
@@ -46,7 +71,11 @@ export class MapContainer extends Component {
         this.setState({address});
       })
       .catch(error => console.error('Error', error));
-  };
+ 
+ 
+ 
+ 
+    };
  
   render() {
     return (
@@ -104,8 +133,40 @@ export class MapContainer extends Component {
           <Marker 
             position={{
               lat: this.state.mapCenter.lat,
-              lng: this.state.mapCenter.lng
+              lng: this.state.mapCenter.lng,
             }} />
+
+          <Marker 
+            position={{
+              lat: this.state.mapMarker.lat,
+              lng: this.state.mapMarker.lng,
+            }} />
+
+
+            <Marker 
+            position={{
+              lat: this.state.mapGriffin.lat,
+              lng: this.state.mapGriffin.lng,
+            }} />
+
+            <Marker 
+            position={{
+              lat: this.state.mapConnel.lat,
+              lng: this.state.mapConnel.lng,
+            }} />
+
+          <Marker 
+            position={{
+              lat: this.state.mapRec.lat,
+              lng: this.state.mapRec.lng,
+            }} />
+             <Marker 
+            position={{
+              lat: this.state.mapCISE.lat,
+              lng: this.state.mapCISE.lng,
+            }} />
+
+
         </Map>
       </div>
     )
