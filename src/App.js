@@ -74,7 +74,7 @@ class Login extends React.Component {
                         clientId={ CLIENT_ID }
                         buttonText='Login'
                         onSuccess={ this.login }
-                        onFailure={ this.handleLoginFailure }                    
+                        onFailure={ this.handleLoginFailure }
                         responseType='code,token'
                       />
                     }
@@ -116,7 +116,7 @@ export default function App() {
 
       <div>
         <div class="topnav">
-          <a class="active" href="/">UF</a>
+          <a class="active" href="#logo">UF</a>
 
 {/*the titles of the different navigation links*/ }
           <div>
