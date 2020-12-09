@@ -3,7 +3,7 @@ import {Container, Row, Col} from 'reactstrap';
 
 export default function Academics() {
         return (
-            <div className="AcademicsPage main bg">
+            <div className="AcademicsPage main bg" style={{minHeight: "100vh"}}>
               <Container fluid>
 
                 <Row>
@@ -11,7 +11,7 @@ export default function Academics() {
                     <h1 className = "heading1 text-center">UNDERGRADUATE RESOURCES</h1>
                   </Col>
 
-                  <Col className = "headbord2"> 
+                  <Col className = "headbord2">
                     <h1 className = "heading1 text-center">GRADUATE RESOURCES</h1>
                   </Col>
                 </Row>
