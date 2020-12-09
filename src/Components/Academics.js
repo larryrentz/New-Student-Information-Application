@@ -57,7 +57,7 @@ export default function Academics() {
                       <h2 className = "heading2">SCHOLARSHIPS</h2>
                       <p><a className = "heading3" href="https://cur.aa.ufl.edu/scholarships/"
                       target="_blank" rel="noopener noreferrer">Center for Undergraduate Research:</a>
-                      <text className = "text1"> The Center for Undergraduate Research offers several scholarship programs. The Scholars Programs introduces undergraduate students at the University of FLorida to exciting world of academic research.</text>
+                      <text className = "text1"> The Center for Undergraduate Research offers several scholarship programs. The Scholars Programs introduces undergraduate students at the University of Florida to exciting world of academic research.</text>
                       </p>
 
                     </Col>
