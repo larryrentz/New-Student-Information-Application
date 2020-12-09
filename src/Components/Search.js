@@ -23,7 +23,7 @@ const Search = (props) => {
             style={{width: "600px", borderRadius: "10px"}}
             class="prompt"
             type="text"
-            placeholder="Filter Search...( ͡° ͜ʖ ͡°)" >
+            placeholder="Filter Search..." >
           </input>
           <i class="search icon"></i>
         </div>
