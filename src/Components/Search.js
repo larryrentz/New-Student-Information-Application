@@ -1,5 +1,5 @@
 import React from "react";
-import {getFilteredClubs} from "../Functions/AppFunctions"
+import {getFilteredPosts} from "../Functions/AppFunctions"
 
 const Search = (props) => {
 
@@ -9,7 +9,7 @@ const Search = (props) => {
 
 
   //Note when adding a new club searching for data will most likely crash the site
-    props.setFilteredClubs(getFilteredClubs(event.target.value, props.data))
+    props.setFilteredPosts(getFilteredPosts(event.target.value, props.data))
   }
 
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { getFootballClub } from "../Functions/AppFunctions";
+import { getPost } from "../Functions/AppFunctions";
 
 /**
  *
@@ -8,11 +8,11 @@ import { getFootballClub } from "../Functions/AppFunctions";
  *THIS PART WORKS AS EXPECTED
  */
 
-const ViewFootballClub = (props) => {
-  const getFootballClubData = () => {
-    return getFootballClub(props.viewFootballClub["id"], props.data)[0];
+const ViewForumPost = (props) => {
+  const getForumPostData = () => {
+    return getPost(props.viewForumPost["id"], props.data)[0];
   };
-  var blank = "Jimminy";
+
   return (
     <div>
       <div style={{ alignItems: "center", justifyContent: "center" }}>
@@ -21,10 +21,10 @@ const ViewFootballClub = (props) => {
         </i>
 
 
-        {props.viewFootballClub['visible'] && getFootballClubData() && (
+        {props.viewForumPost['visible'] && getForumPostData() && (
           <div class="dark-mode">
             <div class="content">
-            <button onClick={() => props.setViewFootballClub(false)} style={{color: "white"}} type="button" class="close" aria-label="Close">
+            <button onClick={() => props.setViewForumPost(false)} style={{color: "white"}} type="button" class="close" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
               {/*you could find a getter or setter that would make this by the user's email name , else make it by anonymous*/}
@@ -32,14 +32,14 @@ const ViewFootballClub = (props) => {
               <div class="ui divider"></div>
               <div class="description" style={{color: "white"}}>
 
-                <p>Title: {getFootballClubData().school}</p>
-                <p>Category: {getFootballClubData().conference}</p>
-                <p>Content: {getFootballClubData().mascot}</p>
+                <p>Title: {getForumPostData().title}</p>
+                <p>Category: {getForumPostData().category}</p>
+                <p>Content: {getForumPostData().content}</p>
 
 
 
-                {getFootballClubData().search && (
-                  <p>Search tags: {getFootballClubData().search.toString().replace(/,/gi, ', ')}</p>
+                {getForumPostData().search && (
+                  <p>Search tags: {getForumPostData().search.toString().replace(/,/gi, ', ')}</p>
                 )}
               </div>
             </div>
@@ -49,4 +49,4 @@ const ViewFootballClub = (props) => {
     </div>
   );
 };
-export default ViewFootballClub;
+export default ViewForumPost;
