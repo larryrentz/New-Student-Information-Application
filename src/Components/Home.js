@@ -82,7 +82,7 @@ export default function Home() {
                       <thead>
                         <tr>
                           <th>Title</th>
-                          <th>Category</th>
+                          <th>Content</th>
                         </tr>
                       </thead>
                       <ForumPostLists
