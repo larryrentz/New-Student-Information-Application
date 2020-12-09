@@ -100,6 +100,15 @@
 
 }
 
+.header-disclaim {
+  border-color: black;
+  border-style: solid;
+  padding: 1px;
+  text-align: center;
+  background: #1069b6;
+  border-bottom: 2px;
+}
+
 .dark-mode {
   background: #343a40;
   max-width:100%;
