@@ -1,17 +1,11 @@
 [
 	{ "title": "What's Good Gainesville" , "content": "New Flea Markets are popping up a mile north of Butler Plaze" , "category": "Lifestyle" , "search":["Shopping", "Markets"] },
 	
-	{ "title": "Can I pass CEN3031" , "content": "I got a 99.9 in the class but I'm not sure about this final uwu" , "category": "Classes" , "search":["Computer Science", "Class", "Pass"] },
+	{ "title": "Can I pass CEN3031" , "content": "I got a 99.9 in the class but I'm not sure about this final" , "category": "Classes" , "search":["Computer Science", "Class", "Pass"] },
 	
-	{ "title": "Where's Dennis" , "content": "He's on University all day long baby" , "category": "Dennis" , "search":["Dennis", "Dancing", "Hunt"] },
-	
-	{ "title": "Cutie at the Corner of 13th and University" , "content": "Can I take you on a date" , "category": "Secret Crush" , "search":["Love", "Drugs", "Rock and Roll"] },
-	
-	{ "title": "Hey I just met you" , "content": "Distance Learning Fees are dumb" , "category": "Lifestyle" , "search":["Coivd", "Carly Rae"] },
+	{ "title": "Hey I just met you" , "content": "Distance Learning Fees are dumb" , "category": "Lifestyle" , "search":["Covid", "Carly Rae"] },
 	
 	{ "title": "Here's my number" , "content": "Nintendo 64s for Sale call 555-252-9887" , "category": "Lifestyle" , "search":["Spam"] },
-	
-	{ "title": "So call me maybe" , "content": "Man if you are reading this call 352-375-2775" , "category": "Lifestyle" , "search":["firestation 38"] },
 	
 	{ "title": "Halo LAN" , "content": "HALO LAN PARTY IN REITZ BASEMENT THIS WEEKEND" , "category": "Video Games" , "search":["HALO", "LAN", "PC", "WOOOO"] },
 	
@@ -60,8 +54,6 @@
 	{ "title": "Georgia State" , "content": "GO PANTHERS" , "category": "Black Panther" , "search":["Marvel"] },
 	
 	{ "title": "Georgia Southern" , "content": "Very" , "category": "Southern" , "search":["southernnotstate"] },
-	
-	{ "title": "Sexual Health" , "content": "Just a PSA to wrap the dogs" , "category": "Gulf South" , "search":["human body"] },
 	
 	{ "title": "Chattanooga" , "content": "A funny name to brighten your day" , "category": "Funny" , "search": ["GOOOO"] },
 	
