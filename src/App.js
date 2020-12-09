@@ -74,8 +74,7 @@ class Login extends React.Component {
                         clientId={ CLIENT_ID }
                         buttonText='Login'
                         onSuccess={ this.login }
-                        onFailure={ this.handleLoginFailure }
-                        cookiePolicy={ 'single_host_origin' }
+                        onFailure={ this.handleLoginFailure }                    
                         responseType='code,token'
                       />
                     }

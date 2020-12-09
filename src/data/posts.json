@@ -1,109 +1,78 @@
 [
-	{ "title": "Alabama" , "content": "Crimson Tide" , "color": "#DC143C" , "category": "SEC" , "search":["roll tide","rolltide","bama football","bama","alabama football","crimson tide football","rtr","roll tide roll","rolltideroll"] },
+	{ "title": "What's Good Gainesville" , "content": "New Flea Markets are popping up a mile north of Butler Plaze" , "category": "Lifestyle" , "search":["Shopping", "Markets"] },
 	
-	{ "title": "Auburn" , "content": "Tigers" , "color": "#dd550c" , "category": "SEC" , "search":["war eagle","wareagle","auburn football","footballau","auburn fb","wardamneagle","goauburn","auburnfootball"] },
+	{ "title": "Can I pass CEN3031" , "content": "I got a 99.9 in the class but I'm not sure about this final uwu" , "category": "Classes" , "search":["Computer Science", "Class", "Pass"] },
 	
-	{ "title": "Florida" , "content": "Eagle" , "color": "#006780" , "category": "Big Florida" , "search":["gogators","go gators","florida gators","florida football","uf football","uf gators","#gators","#uf"] },
+	{ "title": "Where's Dennis" , "content": "He's on University all day long baby" , "category": "Dennis" , "search":["Dennis", "Dancing", "Hunt"] },
 	
-	{ "title": "Tennessee" , "content": "Volunteers" , "color": "#F77F00" , "category": "SEC" , "search":["tennessee football","volnation","govols","go vols","volunteer football","vol_football","#UT","vol football","smokeyvols","bigorange"] },
+	{ "title": "Cutie at the Corner of 13th and University" , "content": "Can I take you on a date" , "category": "Secret Crush" , "search":["Love", "Drugs", "Rock and Roll"] },
 	
-	{ "title": "Missouri" , "content": "Tigers" , "color": "#F1B82D" , "category": "SEC" , "search":["mizzou football","mizzou tigers","mizzoufootball","mizzou tiger","mizzougameday","miz football","go miz","missouri football","gomizzou","gomiz"] },
+	{ "title": "Hey I just met you" , "content": "Distance Learning Fees are dumb" , "category": "Lifestyle" , "search":["Coivd", "Carly Rae"] },
 	
-	{ "title": "Kentucky" , "content": "Wildcats" , "color": "#005DAA" , "category": "SEC" , "search":["kentucky football","kentucky wildcat football","ukfootball","weareUK","bbn","packCWS","stoopstroop"] },
+	{ "title": "And this is crazy" , "content": "Chemistry is Bullshit" , "category": "Class" , "search":["complaints"] },
 	
-	{ "title": "Vanderbilt" , "content": "Commodores" , "color": "#997F3D" , "category": "SEC" , "search":["vandyfootball","vandy football","vanderbilt football","commodore football","godores","go dores","vandy","anchordown"] },
+	{ "title": "Here's my number" , "content": "Nintendo 64s for Sale call 555-252-9887" , "category": "Lifestyle" , "search":["Spam"] },
 	
-	{ "title": "Arkansas" , "content": "Razorbacks" , "color": "#BE0F34" , "category": "SEC" , "search":["arkansas football","razorback football","razorbackFB","#wps","woopigsooie","woo pig sooie","hognation","call the hogs"] },
+	{ "title": "So call me maybe" , "content": "Man if you are reading this call 352-375-2775" , "category": "Lifestyle" , "search":["firestation 38"] },
 	
-	{ "title": "Georgia" , "content": "Bulldogs" , "color": "#AE070F" , "category": "SEC" , "search":["godawgs","go dawgs","uga football","uga fb","werunthisstate","georgia bulldogs","georgiabulldogs","georgiafb"] },
+	{ "title": "I really Screwed Up" , "content": "IM PREGNANT" , "category": "Life Changing" , "search":["Congratulation", "Baby Names"] },
 	
-	{ "title": "Texas A&M" , "content": "Aggies" , "color": "#660000" , "category": "SEC" , "search":["aggie football","texas a&m football","aggies","goaggies","go aggies","aggiefb","tamu","12thman"] },
+	{ "title": "Halo LAN" , "content": "HALO LAN PARTY IN REITZ BASEMENT THIS WEEKEND" , "category": "Video Games" , "search":["HALO", "LAN", "PC", "WOOOO"] },
 	
-	{ "title": "LSU" , "content": "Tigers" , "color": "#461D7C" , "category": "SEC" , "search":["lsu football","lsufb","geauxtigers","lsufball","lsu","lsuwin","geaux tigers","lsu tigers"] },
+	{ "title": "Buckethead" , "content": "When is he going to come back to Gainesville" , "category": "Concert" , "search":["Music", "Metal", "HARDCORE", "FUN"] },
 	
-	{ "title": "Ole Miss" , "content": "Rebels" , "color": "#cf142b" , "category": "SEC" , "search":["hotty toddy","hottytoddy","gorebels","go rebels","ole miss football","olemissfb", "ole miss rebels","rebel football","rebelnation","gorebs","olemiss"] },
+	{ "title": "Better Than Reddit" , "content": "This site is better than Reddit, I can spew whatever the hell I want" , "category": "Praise" , "search":["Reddit"] },
 	
-	{ "title": "Mississippi State" , "content": "Bulldogs" , "color": "#660000" , "category": "SEC" , "search":["Mississippi state football","hailstate","hail state","hailstatefb","msu football","fight4msu","miss state football"] },
+	{ "title": "Can it run DOOM" , "content": "I think this website could run DOOM" , "category": "DOOM" , "search":["DOOM", "RIP AND TEAR"] },
 	
-	{ "title": "South Carolina" , "content": "Gamecocks" , "color": "#73000a" , "category": "SEC" , "search":["scfb","south carolina football","gamecocks","gamecock football","gamecock","uofsc","gamecockfb"] },
+	{ "title": "Fire's on Campus" , "content": "There are so many fires on campus this year its insane" , "category": "Fire" , "search":["hot","burn"] },
 	
-	{ "title": "North Carolina" , "content": "Tar Heels" , "color": "#56A0D3" , "category": "ACC" , "search":["UNC football","goheels","goheelsgoamerica","tar heel football","tarheels","tar heels","go heels","#heels","tarheelnation","uncfb"] },
+	{ "title": "Christmas" , "content": "Christmas PArty at Thomas Hall come and Join and make friends safely" , "category": "Informational" , "search":["Party", "1999", "FUN"] },
 	
-	{ "title": "Clemson" , "content": "Tigers" , "color": "#F66733" , "category": "ACC" , "search":["clemson football","clemsonfb","cu_football","solidorange","clemson tigers"] },
+	{ "title": "Squatting in the dorms" , "content": "If You want to come squat out Broward Hall come to floor 4 room 5" , "category": "Informational" , "search":["illegal", "Vagrant Holiday"] },
 	
-	{ "title": "Georgia Tech" , "content": "Yellow Jackets" , "color": "#F0CF73" , "category": "ACC" , "search":["georgia tech football","ga tech football","gatechfootball","gt_football","#GT","gatech"] },
+	{ "title": "HELLO BABY" , "content": "Do not choose Rawlings hall as your dorm it is hell" , "category": "Informational" , "search":["Bad experience", "0 star review"] },
 	
-	{ "title": "Florida State" , "content": "Seminoles" , "color": "#540115" , "category": "ACC" , "search":["fsu_football","fsu football","#noles","go noles","#FSU","florida state football","#warchant","seminole football"] },
+	{ "title": "Sunday Post" , "content": "Happy Sunday Everybody" , "category": "Informational" , "search":["The Lord's Day"] },
 	
-	{ "title": "Miami" , "content": "Hurricanes" , "color": "#366732" , "category": "ACC" , "search":["Miami football","MiamiHurricanes","miami hurricanes","go canes","gocanes"] },
+	{ "title": "Publix on University" , "content": "Who is that cutie on register five" , "category": "Informational" , "search":["Hot Cashier"] },
 	
-	{ "title": "NC State" , "content": "Wolfpack" , "color": "#CC0000" , "category": "ACC" , "search":["nc state football","ncsufb","gopack","go pack","ncsu football","wolfpack football","go wolfpack","state wolfpack","packfootball","ncstate","1pack1goal"] },
+	{ "title": "Chicken Tender Subs on Sale" , "content": "THEY ARE ON SALE GO GRAB THEM" , "category": "Informational" , "search":["Food","Pub Sub"] },
 	
-	{ "title": "Virginia" , "content": "Cavaliers" , "color": "#114475" , "category": "ACC" , "search":["wahoowa","gohoos","hoos football","uva football","uva_football","#uva","hoo football","gohoos","uva cavaliers","uvafb"] },
+	{ "title": "Virginia" , "content": "Cavaliers game in Hume Hall" , "category": "Informational" , "search":["games"] },
 	
-	{ "title": "Virginia Tech" , "content": "Hokies" , "color": "#660000" , "category": "ACC" , "search":["gohokies","va tech football","vt football","go hokies","vt_football","hokie football"] },
+	{ "title": "Oregano" , "content": "I got hook ups find the path to the rainbow road" , "category": "Informational" , "search":["weed"] },
 	
-	{ "title": "Maryland" , "content": "Terrapins" , "color": "#D5002B" , "category": "ACC" , "search":["md_football","maryland football","goterps","terps football","umd football"] },
+	{ "title": "Digital Logic with Schwartz" , "content": "For the love of god do not take it" , "category": "Informational" , "search":["hell"] },
 	
-	{ "title": "Boston College" , "content": "Eagles" , "color": "#821E1E" , "category": "ACC" , "search":["boston college football","bcfootballnews","#bcfootball","wearebc"] },
+	{ "title": "Call of Duty Cold War" , "content": "Drop in on Localhost:3000 to chill" , "category": "Informational" , "search":["computers"] },
 	
-	{ "title": "Pitt" , "content": "Panthers" , "color": "#003263" , "category": "ACC" , "search":["gopittfootball","pitt football","pitt panthers","gopitt","#pitt","#hailpitt"] },
+	{ "title": "Covid 19 Policy" , "content": "Lets hope it all gets better in 2021 wear your masks gators" , "category": "Informational" , "search":["THE FUTURE"] },
 	
-	{ "title": "Syracuse" , "content": "Orange" , "color": "#F37321" , "category": "ACC" , "search":["syrfootball","cuse","goorange","syracuse orange","syracuse football","#syracuse"] },
+	{ "title": "End of 2020" , "content": "THANK GOD LETS CELEBRATE" , "category": "Informational" , "search":[" no"] },
 	
-	{ "title": "Duke" , "content": "Blue Devils" , "color": "#004C7D" , "category": "ACC" , "search":["duke_fb","goduke","duke football","#bluedevils","dukefootball"] },
+	{ "title": "1999" , "content": "Bizarre Summer" , "category": "Informational" , "search":["Summer"] },
 	
-	{ "title": "Wake Forest" , "content": "Demon Deacons" , "color": "#C49544" , "category": "ACC" , "search":["wakefb","demon deacons","deaconfootball","gowake","godeacs","wake football","deacs","go deacs"] },
+	{ "title": "You are doing great" , "content": "Nah you are doing fantastic" , "category": "Uplifting" , "search":["Hope"] },
 		 
-	{ "title": "Louisville" , "content": "Cardinals" , "color": "#AD0000" , "category": "American (formerly Big East)" , "search":["louisville football","gocards","louisville cardinals","cardinal football","cardnation","gocards","L1C4"] },
+	{ "title": "Exam Week lets get this bread" , "content": "WOOOOOOOOO" , "category": "Random" , "search":["Exam","END"] },
 	
-	{ "title": "East Carolina" , "content": "Pirates" , "color": "#4A1F68" , "category": "C-USA" , "search":["pirate football","ecu football","piratenation","ecufootball","ecu pirates","gopirates","go pirates","east carolina football"] },
+	{ "title": "President Fuchs needs to go dancing with us all" , "content": "I can do the maranga" , "category": "UF" , "search":["president","#OURPRESIDENTFUCHS"] },
 	
-	{ "title": "Southern Miss" , "content": "Eagles" , "color": "#FDC737" , "category": "C-USA" , "search":["southern miss football","#southernmiss","usm football","#usm","#smttt","southernmissfb","goldeneaglepride"] },
+	{ "title": "I was dreaming when I wrote this" , "content": "Forgive me if this makes no sense" , "category": "Prince" , "search":["1999","Prince"] },
 	
-	{ "title": "Central Florida" , "content": "Knights" , "color": "#B4985A" , "category": "American (formerly Big East)" , "search":["ucf_football","ucf football","central florida football","#chargeon","#ucf","#goknights","ucf fb"] },
+	{ "title": "Central Florida" , "content": "There is nothing here as far as I know it doesn't exist" , "category": "Random" , "search":["central florida football","ucf fb"] },
 	
-	{ "title": "South Florida" , "content": "Bulls" , "color": "#004A36" , "category": "American (formerly Big East)" , "search":["#USF football","usffootball","south florida football","usf football","gobulls"] },
+	{ "title": "South Florida" , "content": "Not Southern Florida we are more northen than southern" , "category": "Random" , "search":["south florida"] },
 	
-	{ "title": "Georgia State" , "content": "Panthers" , "color": "#005DAA" , "category": "Sun Belt" , "search":["georgia state football","allblueallin","gsu football","gsupanthers","statenotsouthern"] },
+	{ "title": "Georgia State" , "content": "GO PANTHERS" , "category": "Black Panther" , "search":["Marvel"] },
 	
-	{ "title": "Georgia Southern" , "content": "Eagles" , "color": "#003775" , "category": "Southern" , "search":["southernnotstate","georgia southern football","gsathletics","ga southern football"] },
+	{ "title": "Georgia Southern" , "content": "Very" , "category": "Southern" , "search":["southernnotstate"] },
 	
-	{ "title": "Valdosta State" , "content": "Blazers" , "color": "#9D0100" , "category": "Gulf South" , "search":["valdosta state football","vsu football","vsu blazers","valdostastfb","vsufootball","#VSU"] },
+	{ "title": "Sexual Health" , "content": "Just a PSA to wrap the dogs" , "category": "Gulf South" , "search":["human body"] },
 	
-	{ "title": "Chattanooga" , "content": "Mocs" , "color": "#01457b" , "category": "Southern" , "search": ["gomocs","go mocs","ut chattanooga football","chattanooga football","gomocsFB","mocs football","mocsnationFB","mocsnation"] },
+	{ "title": "Chattanooga" , "content": "A funny name to brighten your day" , "category": "Funny" , "search": ["GOOOO"] },
 	
-	{ "title": "Western Carolina" , "content": "Catamounts" , "color": "#492F92" , "category": "Southern" , "search": ["western carolina football","catamount football","catamountfb","catamountnation","catamountpride"] },
+	{ "title": "Climbing gear for sale" , "content": "1234 SW 50th Avenue Garage Sale" , "category": "Sale" , "search": ["GARAGESALE"] }
 	
-	{ "title": "Alabama State" , "content": "Hornets" , "color": "#f0a411" , "category": "Southwestern Athletic category" , "search": ["alabama state hornets","asu hornets","bama state hornets","bama state football","bamastatebeatfb","alabamastate","gohornets"] },
-	
-	{ "title": "Appalachian State" , "content": "Mountaineers" , "color": "#f4c20a" , "category": "Southern" , "search": ["appstate_fb","app mountaineer football","alwaysattack","appnation","appstate","appalachian state football","go neers","app state football","goapp"] },
-	
-	{ "title": "UTEP" , "content": "Miners" , "color": "#F65A1F" , "category": "C-USA" , "search": ["utepfb","utep football","gominers","minerstrong","utep miners","minernation","miner_nation"] },
-	
-	{ "title": "Furman" , "content": "Paladins" , "color": "#6B3FA0" , "category": "Southern" , "search": ["furmanfootball","furman paladins","paladin football","paladinfootball","gopaladins"] },
-	
-	{ "title": "Idaho" , "content": "Vandals" , "color": "#B18E5F" , "category": "Independent" , "search": ["idaho vandals","idaho_vandals","go vandals","govandals","#vandals","uidaho","vandals football"] },
-	
-	{ "title": "Troy" , "content": "Trojans" , "color": "#A20531" , "category": "Sun Belt" , "search": ["troy football","troy trojans","#troytrojans","troytrojansfb"] },
-	
-	{ "title": "Bowling Green" , "content": "Falcons" , "color": "#613005" , "category": "Mid-American" , "search": ["bgfalconfootbal","bowling green football","bowling green falcons","bg falcons football","wearebg","bgsu","rollalong"] },
-	
-	{ "title": "Coastal Carolina" , "content": "Chanticleer" , "color": "#008080" , "category": "Big South" , "search": ["chanticleer football","goteal","chantnation","chantsup","bleedteal","gochants","go chanticleers","ccu football","ccu fb"] },
-	
-	{ "title": "Old Dominion" , "content": "Monarchs" , "color": "#002B5F" , "category": "Colonial Athletic Association" , "search": ["old dominion football","odu football","ODUfootball","odufb","odu monarchs","old dominion monarch"] },
-	
-	{ "title": "BYU" , "content": "Cougars" , "color": "#002255" , "category": "Independent" , "search": ["byufootball","byucougars","#byu","byu cougars","byu football","gobyu"] },
-	
-	{ "title": "Alabama A&M" , "content": "Bulldogs" , "color": "#750000" , "category": "Southwestern" , "search": ["#aamu","aamu football","aamufb"] },
-	
-	{ "title": "New Mexico State" , "content": "Aggies" , "color": "#CC2233" , "category": "Independent" , "search": ["#nmstateaggies","nmsu football","new mexico state football","#aggieup","#nmstate","nmstate football","nmsu aggies","new mexico state aggies"] },
-	
-	{ "title": "Navy" , "content": "Midshipmen" , "color": "#000080" , "category": "Independent" , "search": ["#NavyFootball","#GoNavy","midshipmen football","navy football"] },
-	
-	{ "title": "Notre Dame" , "content": "Fighting Irish" , "color": "#002b5c" , "category": "Independent" , "search": ["#goirish","fighting irish","notre dame football","fightingirish","#NotreDame","go fighting irish","gofightingirish"] },
-	
-	{ "title": "Florida Atlantic" , "content": "Owls" , "color": "#003366" , "category": "C-USA" , "search": ["FAU_football","#owlnation","FAU football","florida atlantic football","florida atlantic owls","fau #goowls"] },
-	
-	{ "title": "The Citadel" , "content": "Bulldogs" , "color": "#4189DD" , "category": "Southern" , "search": ["citadel football","citadelfootball","#TheCitadel","citadel bulldogs"] }
-	]
+		]
