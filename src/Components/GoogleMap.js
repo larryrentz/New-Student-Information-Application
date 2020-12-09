@@ -153,78 +153,78 @@ export class MapContainer extends Component {
             title='University of Florida'
             position={{ lat: this.state.mapCenter.lat, lng: this.state.mapCenter.lng }}
             />
-            <InfoWindow
+            {/*<InfoWindow
             marker={this.state.activeMarker}
             visible={this.state.showingInfoWindow}>
               <div>
                 <h3>University of Florida</h3>
               </div>
-            </InfoWindow>
+            </InfoWindow>*/}
 
             <Marker
             onClick={this.onMarkerClick}
             title='Marston Science Library'
             position={{ lat: this.state.mapMarker.lat, lng: this.state.mapMarker.lng }}
             />
-            <InfoWindow
+            {/*<InfoWindow
             marker={this.state.activeMarker}
             visible={this.state.showingInfoWindow}>
               <div>
                 <h3>Marston Science Library</h3>
               </div>
-            </InfoWindow>
+            </InfoWindow>*/}
 
             <Marker
             onClick={this.onMarkerClick}
             title='Ben Hill Griffin Stadium'
             position={{ lat: this.state.mapGriffin.lat, lng: this.state.mapGriffin.lng }}
             />
-            <InfoWindow
+            {/*<InfoWindow
             marker={this.state.activeMarker}
             visible={this.state.showingInfoWindow}>
               <div>
                 <h3>Ben Hill Griffin Stadium</h3>
               </div>
-            </InfoWindow>
+            </InfoWindow>*/}
 
             <Marker
             onClick={this.onMarkerClick}
             title="Stephen C. O'Connell Center"
             position={{ lat: this.state.mapConnel.lat, lng: this.state.mapConnel.lng }}
             />
-            <InfoWindow
+            {/*}<InfoWindow
             marker={this.state.activeMarker}
             visible={this.state.showingInfoWindow}>
               <div>
                 <h3>Stephen C. O'Connell Center</h3>
               </div>
-            </InfoWindow>
+            </InfoWindow>*/}
 
             <Marker
             onClick={this.onMarkerClick}
             title="Student Recreation & Fitness Center"
             position={{ lat: this.state.mapRec.lat, lng: this.state.mapRec.lng }}
             />
-            <InfoWindow
+            {/*<InfoWindow
             marker={this.state.activeMarker}
             visible={this.state.showingInfoWindow}>
               <div>
                 <h3>Student Recreation & Fitness Center</h3>
               </div>
-            </InfoWindow>
+            </InfoWindow>*/}
 
             <Marker
             onClick={this.onMarkerClick}
             title="Reitz Union"
             position={{ lat: this.state.mapReitz.lat, lng: this.state.mapReitz.lng }}
             />
-            <InfoWindow
+            {/*<InfoWindow
             marker={this.state.activeMarker}
             visible={this.state.showingInfoWindow}>
               <div>
                 <h3>Reitz Union</h3>
               </div>
-            </InfoWindow>
+            </InfoWindow>*/}
 
         </Map>
       </div>
