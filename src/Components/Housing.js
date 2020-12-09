@@ -3,6 +3,7 @@ import {Container, Row, Col} from 'reactstrap';
 
 export default function Housing() {
       return (
+        <div class="bg" style={{minHeight: "100vh"}}>
             <div className="HousingPage main bg">
 
               <Container fluid>
@@ -66,7 +67,8 @@ export default function Housing() {
               </Container>
 
 
-             
+
+            </div>
             </div>
         );
 }
